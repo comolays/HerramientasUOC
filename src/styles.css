@@ -1,5 +1,79 @@
-body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #bada55, #c0ffee);
+/*---------------------CÓDIGO GENERAL ESTILO-----------*/
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+*,*:after,*:before{
+  box-sizing: border-box;
+}
+header *, footer *{
+  margin:0;
+  padding:0;
+  list-style:none;
+  color: white;
+}
+.container{
+  width:94%;
+  max-width:1200px;
+  margin:0 auto;
+}
+/*----------------------------CÓDIGO MENÚ NAV------*/
+.menu {
+  background-color: #0093FB;
+}
+.gridmenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.navegacion nav ul {
+  display: flex;
+  list-style: none;
+}
+.navegacion nav ul li a {
+  margin-left: 2em;
+  text-decoration: none;
+}
+/*----------------------------ESTILO DE PÁGINA DONDE ESTÁ EL USUARIO----*/
+.pagactual a{
+  border: none;
+  border-bottom:solid yellow;
+}
+/*----------------------------------------MAIN INDEX.HTML-------------*/
+/*-------------------------RELATIVO A LA FOTO Y TEXTO-------------*/
+#fotoprinci{
+  height: 800px;
+  background-image: url(IMG/foto-princi-index.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+/*----------------------------RELATIVO AL TEXTO SOBRE LA FOTO------------*/
+#textoprinci{
+  font-size: 3.5em;
+}
+#eslogan{
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding-left: 10%;
+}
+/*--------------ENLACE A CATEGORIAS---------------*/
+#linkboton a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid #0093FB;
+  border-radius: 0.3cm;
+  background-color: #0093FB;
+  padding: 20px;
+}
+#linkboton a:hover, #linkboton a:focus{
+  color: #0093FB;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 0.3cm;
+  background-color: white;
+  padding: 20px;
 }
