@@ -66,7 +66,7 @@ header *, footer *{
 /*-------------------------RELATIVO A LA FOTO Y TEXTO-------------*/
 #fotoprinci{
   height: 800px;
-  background-image: url(IMG/foto-princi-index.jpg);
+  background-image: url(../IMG/foto-princi-index.jpg);
   background-size: cover;
   color: white;
   display: flex;
@@ -121,7 +121,7 @@ header *, footer *{
 }
 /*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
 #fotobuscar{
-  background-image: url(IMG/buscar.jpg);
+  background-image: url(../IMG/buscar.jpg);
   background-size: cover;
   border-radius: 0.5cm;
 }
@@ -151,7 +151,7 @@ header *, footer *{
     grid-template-columns: 1fr;
   }
   #fotobuscar{
-    background-image: url(IMG/buscar.jpg);
+    background-image: url(../IMG/buscar.jpg);
     height: 400px;
   }
   #conocenosboton{
@@ -160,7 +160,7 @@ header *, footer *{
 }
 /*----------------------------SECCIÓN 3---------------*/
 #fondosecciontres{
-  background-image: url(IMG/1-1-scaled.jpeg);
+  background-image: url(../IMG/1-1-scaled.jpeg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -184,7 +184,7 @@ header *, footer *{
   color: white;
 }
 #fotoenlace{
-  background-image: url(IMG/enlace.png);
+  background-image: url(../IMG/enlace.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
