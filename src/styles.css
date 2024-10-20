@@ -17,9 +17,24 @@ header *, footer *{
   max-width:1200px;
   margin:0 auto;
 }
+/*---------------------------FUENTE--------------------*/
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+#indexhtml{
+  background-color: #0093FB;
+}
 /*----------------------------CÓDIGO MENÚ NAV------*/
 .menu {
   background-color: #0093FB;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .gridmenu{
   display: grid;
@@ -31,8 +46,16 @@ header *, footer *{
   list-style: none;
 }
 .navegacion nav ul li a {
-  margin-left: 2em;
+  margin-left: 2.3em;
   text-decoration: none;
+  padding: 7px;
+  border-radius: 0.3cm;
+}
+/*----------------------------------ESTILOS MENÚ NAV---------------*/
+.navegacion nav ul li a:hover, .navegacion nav ul li a:focus{
+  background-color: #3e4042;
+  border-radius: 0.3cm;
+  border-bottom: none;
 }
 /*----------------------------ESTILO DE PÁGINA DONDE ESTÁ EL USUARIO----*/
 .pagactual a{
@@ -51,6 +74,10 @@ header *, footer *{
   justify-content: space-around;
   text-align: center;
 }
+#mainindex{
+  display: flex;
+  flex-direction: column;
+}
 /*----------------------------RELATIVO AL TEXTO SOBRE LA FOTO------------*/
 #textoprinci{
   font-size: 3.5em;
@@ -59,8 +86,8 @@ header *, footer *{
   border-top: solid 1px;
   border-bottom: solid 1px;
 }
-/*--------------ENLACE A CATEGORIAS---------------*/
-#linkboton a{
+/*--------------ESTILOS BOTÓN ENLACE---------------*/
+.linkboton a{
   color: white;
   text-decoration: none;
   border: 1px solid #0093FB;
@@ -68,11 +95,158 @@ header *, footer *{
   background-color: #0093FB;
   padding: 20px;
 }
-#linkboton a:hover, #linkboton a:focus{
+.linkboton a:hover, #linkboton a:focus{
   color: #0093FB;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 0.3cm;
   background-color: white;
   padding: 20px;
+}
+/*-------------------------------------------------------SECCIÓN 2 DE INDEX.HTML----*/
+#fondo{
+  background-color: #0093FB;
+  color: #0093FB;
+  margin-top: 2cm;
+}
+/*-------------------------BLOQUE FLEX DE SECCIÓN DOS INDEX.HMTL----*/
+#sabermas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: white;
+  border-radius: 0.5cm;
+  padding: 20px;
+  margin-bottom: 2cm;
+}
+/*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
+#fotobuscar{
+  background-image: url(IMG/buscar.jpg);
+  background-size: cover;
+  border-radius: 0.5cm;
+}
+/*-------------------TEXTO SECCION DOS INDEX.HMTL-----*/
+#secciondos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#secciondos p:first-of-type{
+  width: 80%;
+  line-height: 2em;
+  font-size: 1em;
+}
+#secciondos p:last-of-type{
+  font-size: 2.5em;
+  padding-bottom: 15px;
+}
+#conocenosboton{
+  margin-bottom: 5px;
+}
+/*-------------------TEXTO SECCION DOS INDEX.HMTL RESPONSIVE-----*/
+@media screen and (max-width: 800px){
+  #sabermas{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #fotobuscar{
+    background-image: url(IMG/buscar.jpg);
+    height: 400px;
+  }
+  #conocenosboton{
+    margin-bottom: 20px;
+  }
+}
+/*----------------------------SECCIÓN 3---------------*/
+#fondosecciontres{
+  background-image: url(IMG/1-1-scaled.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#bloquesectre{
+  display: flex;
+  flex-direction: column;
+  background-color: #0093FB;
+  width: 40%;
+  height: 11cm;
+  border-radius: 0.5cm;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  padding: 20px;
+  align-items: center;
+}
+#textosec3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+#fotoenlace{
+  background-image: url(IMG/enlace.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+/*-----------------------------BOTÓN VISITA LOS RECURSOS---------*/
+#botonenlace{
+  margin-top: 1.5cm;
+}
+#botonenlace a{
+  color: #0093FB;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 0.3cm;
+  background-color: white;
+  padding: 20px;
+}
+#botonenlace a:hover, #linkboton a:focus{
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgb(227, 10, 235);
+  border-radius: 0.3cm;
+  background-color: rgb(227, 10, 235);
+  padding: 20px;
+}
+/*-------------------------------FOOTER------------------*/
+footer{
+  background-color: #0093FB;
+  display: flex;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logofooter a img{
+  height: 150px;
+  width: 190px;
+}
+.redessociales{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 4%;
+}
+.redessociales ul{
+  display: flex;
+  align-items: center;
+}
+.bloque1{
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+.bloque1 div:nth-child(2){
+  margin-bottom: 1cm;
+  padding-left: 2%;
+}
+.bloque1 div:nth-child(2) ul a{
+  text-decoration: none;
+  line-height: 1.5em;
+}
+/*------------------------------------ESTILO ENLACES FOOTER-----------*/
+.legalesfooter li a:focus, .legalesfooter li a:hover{
+  border-bottom: solid 1px white;
 }

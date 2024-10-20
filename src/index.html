@@ -6,9 +6,12 @@
     <title>My first Parcel App</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="IMG/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script type="module" src="app.js"></script>
 </head>
-<body>
+<body id="indexhtml" class="noto-sans-font">
 <header class="menu">
     <div class="container">
     <div class="gridmenu">
@@ -29,16 +32,73 @@
     </div>
     </div>
 </header>
-<main>
+<main id="mainindex">
+<!---------------------------- Primera sección con la foto de fondo y el enlace a categorías.html -->
     <section id="fotoprinci">
         <div id="textoprinci" class="container">
             <h1 id="tituloindex">CULTURA, PAISAJE Y MAR</h1>
             <p id="eslogan">VISITA LOS FIORDOS ESPAÑOLES</p>
         </div>
-        <div id="linkboton" class="container">
-            <a href="categoria.html" hreflang="es">DESCUBRE NUESTROS SITIOS</a>
+        <div class="linkboton" class="container">
+            <a href="categoria.html" hreflang="es">DESCUBRE LOS LUGARES</a>
         </div>
     </section>
-</main>  
+<!----------------------------- Segunda sección con un enlace a la sección de presentacion.html -->
+    <section id="fondo">
+    <div class="container" id="sabermas">
+        <div id="secciondos">
+            <h2>¿Quieres saber más acerca de nosotros?</h2>
+            <p>A continuación, podrás conocer nuestra historia, lo que mostramos y cual es nuestro objetivo. Pero el principal objetivo ya te lo decimos ahora:</p>
+            <p>¡QUE REPITAS!</p>
+            <div class="linkboton" class="container" id="conocenosboton">
+                <a href="presentacion.html" hreflang="es">CONÓCENOS</a>
+            </div>
+        </div>
+        <div id="fotobuscar">
+        </div>
+    </div>
+    </section>
+
+<!---------------------------- Tercera sección con enlace a enlaces.html -->
+<section id="fondosecciontres">
+    <div id="bloquesectre">
+        <div id="textosec3" class="container">
+            <h2>¿Te interesa saber los recursos usados para la craeción de esta web?</h2>
+            <p>¡TE LOS PRESENTAMOS!</p>
+        </div>
+        <div id="fotoenlace" class="container">
+        </div>
+        <div id="botonenlace">
+            <a href="enlaces.html" hreflang="es">VISITA LOS RECURSOS</a>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+<div class="container">
+    <div class="footer">
+        <div class="bloque1">
+        <div class="logofooter">
+            <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/rias-baixas-logo.png" alt="Rias Baixas Logo" width="auto" height="90"></a>
+        </div>
+        <div class="container">
+            <p>2024 © Alejandro Abuín Álvarez</p>
+            <ul class="legalesfooter">
+              <li><a href="" hreflang="es" title="Aviso legal">Aviso legal</a></li>
+              <li><a href="" hreflang="es" title="Política de privacidad">Política de privacidad</a></li>
+              <li><a href="" hreflang="es" title="Política de cookies">Política de <i lang="en">cookies</i></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="redessociales">
+            <ul>
+                <li><a href="" title="Facebook" hreflang="es"><img src="IMG/facebook.png" alt="Facebook" width="50" height="50"></a></li>
+                <li><a href="" title="Instagram" hreflang="es"><img src="IMG/Instagram_icon.png" alt="Instagram" width="28" height="28"></a></li>
+                <li><a href="" title="Twitter" hreflang="es"><img src="IMG/x.png" alt="Twitter" width="47" height="47"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
 </body>
 </html>
