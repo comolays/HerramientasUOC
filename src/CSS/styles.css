@@ -143,6 +143,12 @@ header *, footer *{
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 550px){
+  #secciondos h2{
+    display: flex;
+    text-align: center;
+  }
+}
 #secciondos p:first-of-type{
   width: 80%;
   line-height: 2em;
@@ -188,11 +194,23 @@ header *, footer *{
   padding: 20px;
   align-items: center;
 }
-#textosec3{
+#textosectres{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+}
+@media screen and (max-width: 550px){
+  #textosectres h2{
+    display: flex;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px){
+  #textosectres p{
+    display: flex;
+    text-align: center;
+  }
 }
 #fotoenlace{
   background-image: url(../IMG/enlace.png);
@@ -276,5 +294,70 @@ footer{
     display: flex;
     flex-direction:column;
     align-items: center;
+  }
+}
+
+/*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
+#maincategoria{
+  padding-top: 120px;
+  background-color: #56687a;
+}
+.tarjetas{
+  background-color: #0093FB;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.5cm;
+  margin-top: 1cm;
+  justify-items: center;
+}
+.tarjetas div{
+  width: fit-content;
+}
+.tarjetas a {
+  text-decoration: none;
+}
+.tarjetas figure:hover {
+  background-color: #3e4042;
+}
+/*--------------------DISEÑO CAJAS-----------------*/
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
+  border-radius: 0.3cm;
+  width: 250px;
+  margin: auto;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  overflow: hidden;
+}
+.tarjeta img{
+  width: 100%;
+  height: 140px;
+  border-bottom: solid 2px white;
+}
+figcaption{
+  padding: 8px;
+  color: white;
+}
+#gastronomia{
+  margin-top: 2cm;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 870px){
+  .tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #maincategoria h2{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 570px){
+  .tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
