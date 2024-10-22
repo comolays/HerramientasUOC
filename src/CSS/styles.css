@@ -33,6 +33,7 @@ header *, footer *{
 .menu {
   background-color: #0093FB;
   position: fixed;
+  z-index: 1000;
   top: 0;
   width: 100%;
 }
@@ -74,6 +75,11 @@ header *, footer *{
   justify-content: space-around;
   text-align: center;
 }
+@media screen and (max-width: 570px){
+  #fotoprinci{
+    height: auto;
+  }
+}
 #mainindex{
   display: flex;
   flex-direction: column;
@@ -86,6 +92,11 @@ header *, footer *{
   border-top: solid 1px;
   border-bottom: solid 1px;
 }
+@media screen and (max-width: 665px){
+  #botondescubre{
+    margin-bottom: 1cm;
+  }
+}
 /*--------------ESTILOS BOTÓN ENLACE---------------*/
 .linkboton a{
   color: white;
@@ -96,11 +107,11 @@ header *, footer *{
   padding: 20px;
 }
 .linkboton a:hover, #linkboton a:focus{
-  color: #0093FB;
+  color: white;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid rgb(227, 10, 235);
   border-radius: 0.3cm;
-  background-color: white;
+  background-color: rgb(227, 10, 235);
   padding: 20px;
 }
 /*-------------------------------------------------------SECCIÓN 2 DE INDEX.HTML----*/
@@ -145,7 +156,7 @@ header *, footer *{
   margin-bottom: 5px;
 }
 /*-------------------TEXTO SECCION DOS INDEX.HMTL RESPONSIVE-----*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
   #sabermas{
     display: grid;
     grid-template-columns: 1fr;
@@ -169,8 +180,8 @@ header *, footer *{
   display: flex;
   flex-direction: column;
   background-color: #0093FB;
-  width: 40%;
-  height: 11cm;
+  width: 50%;
+  height: auto;
   border-radius: 0.5cm;
   margin-top: 2cm;
   margin-bottom: 2cm;
@@ -193,6 +204,9 @@ header *, footer *{
 /*-----------------------------BOTÓN VISITA LOS RECURSOS---------*/
 #botonenlace{
   margin-top: 1.5cm;
+  margin-bottom: 1cm;
+  width: fit-content;
+  height: max-content;
 }
 #botonenlace a{
   color: #0093FB;
@@ -209,6 +223,13 @@ header *, footer *{
   border-radius: 0.3cm;
   background-color: rgb(227, 10, 235);
   padding: 20px;
+}
+@media screen and (max-width: 510px){
+  #botonenlace{
+    display: flex;
+    width: max-content;
+    height: max-content;
+  }
 }
 /*-------------------------------FOOTER------------------*/
 footer{
@@ -249,4 +270,11 @@ footer{
 /*------------------------------------ESTILO ENLACES FOOTER-----------*/
 .legalesfooter li a:focus, .legalesfooter li a:hover{
   border-bottom: solid 1px white;
+}
+@media screen and (max-width: 850px){
+  .footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
 }
