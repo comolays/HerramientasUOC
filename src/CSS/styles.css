@@ -41,6 +41,7 @@ header *, footer *{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 .navegacion nav ul {
   display: flex;
@@ -300,7 +301,7 @@ footer{
 /*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
 #maincategoria{
   padding-top: 120px;
-  background-color: #56687a;
+  background-color: #72ade7;
 }
 .tarjetas{
   background-color: #0093FB;
@@ -309,6 +310,9 @@ footer{
   border-radius: 0.5cm;
   margin-top: 1cm;
   justify-items: center;
+}
+#lugaresvisita h2, #gastronomia h2{
+  color: white;
 }
 .tarjetas div{
   width: fit-content;
@@ -321,10 +325,7 @@ footer{
 }
 /*--------------------DISEÑO CAJAS-----------------*/
 .tarjeta{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: solid 2px white;
   border-radius: 0.3cm;
   width: 250px;
@@ -360,4 +361,26 @@ figcaption{
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+/* ---------------------------DETALLES - COMBARRO ARTÍCULO */
+#detalle_combarro{
+  margin-top: 3cm;
+  margin-bottom: 2cm;
+  display: flex;
+  justify-content: center;
+}
+#articulocombarro{
+  background-color: #0093FB;
+  width: max-content;
+  border-radius: 0.5cm;
+}
+#combarrofigure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#combarrofigure figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
