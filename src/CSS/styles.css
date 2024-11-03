@@ -223,7 +223,7 @@ header *, footer *{
 #botonenlace{
   margin-top: 1.5cm;
   margin-bottom: 1cm;
-  width: fit-content;
+  width: max-content;
   height: max-content;
 }
 #botonenlace a{
@@ -314,12 +314,13 @@ footer{
   color: white;
 }
 .tarjetas div{
-  width: fit-content;
+  width: max-content;
 }
 .tarjetas a {
   text-decoration: none;
 }
-.tarjetas figure:hover {
+.tarjetas figure:hover, .tarjetas figure:focus, 
+.masisitiostarjeta figure:hover, .masisitiostarjeta figure:focus {
   background-color: #3e4042;
 }
 /*--------------------DISEÑO CAJAS-----------------*/
@@ -362,24 +363,72 @@ figcaption{
   }
 }
 /* ---------------------------DETALLES - COMBARRO ARTÍCULO */
-#detalle_combarro{
-  margin-top: 3cm;
-  margin-bottom: 2cm;
-  display: flex;
-  justify-content: center;
+.detalle_sitio{
+  padding-top: 4cm;
+  padding-bottom: 2cm;
+  background-color: #72ade7;
 }
-#articulocombarro{
+.articumasseccion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*----------------CARACTERÍSTICAS DEL ARTÍCULO--*/
+.articulositio h1{
+  font-size: 45px;
+}
+.articulositio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sitiofigure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #0093FB;
   width: max-content;
   border-radius: 0.5cm;
+  padding: 15px;
 }
-#combarrofigure{
+.sitiofigure figure{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#combarrofigure figure{
+/*---------------CAJAS DE TEXTO DEL ARTÍCULO DEL SITIO---*/
+.bloquesitio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  background-color: #0093FB;
+  border-radius: 0.5cm;
+  margin-top: 1cm;
+  padding: 20px;
+}
+.textositio{
+  background-color: white;
+  border-radius: 0.5cm;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.8em;
+}
+/*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS-------*/
+.massitios{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 2cm;
+}
+.masisitiostarjeta{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: #0093FB;
+  width: max-content;
+  padding: 10px;
+  border-radius: 0.5cm;
+}
+table, caption, th, td{
+  border: 1px solid;
 }
