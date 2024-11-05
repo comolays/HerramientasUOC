@@ -377,6 +377,9 @@ figcaption{
 .articulositio h1{
   font-size: 45px;
   color: white;
+  background-color: #0093FB;
+  padding: 15px;
+  border-radius: 0.5cm;
 }
 .articulositio{
   display: flex;
@@ -408,6 +411,8 @@ figcaption{
 iframe{
   width: 700px;
   height: 415px;
+  border: none;
+  
 }
 @media screen and (max-width: 815px){
   iframe{
