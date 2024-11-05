@@ -141,7 +141,7 @@ header *, footer *{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: justify;
 }
 @media screen and (max-width: 550px){
   #secciondos h2{
@@ -169,7 +169,7 @@ header *, footer *{
   }
   #fotobuscar{
     background-image: url(../IMG/buscar.jpg);
-    height: 400px;
+    height: 300px;
   }
   #conocenosboton{
     margin-bottom: 20px;
@@ -177,8 +177,9 @@ header *, footer *{
 }
 /*----------------------------SECCIÓN 3---------------*/
 #fondosecciontres{
-  background-image: url(../IMG/1-1-scaled.jpeg);
+  background-image: url(../IMG/fondo3sec.jpg);
   background-size: cover;
+  background-position: 50%;
   display: flex;
   justify-content: center;
 }
@@ -512,7 +513,51 @@ iframe{
      justify-items: center
   }
 }
-
-table, caption, th, td{
-  border: 1px solid;
+/*-------------PRESENTACIÓN.HTML---*/
+#presentacionmain{
+  padding-top: 4cm;
+  background-color: #0093FB;
+}
+#descripciongalicia{
+  background-image: url(../IMG/presentación/cies.jpg);
+  background-size: cover;
+  line-height: 1.8em;
+  text-align: justify;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  height: max-content;
+}
+#bloqueprimero{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #0093FB;
+  padding: 25px;
+  border-radius: 0.5cm;
+  color: white;
+  justify-items: end;
+}
+#bloqueprimero h2{
+  text-decoration: underline;
+}
+#maparias{
+  background-image: url(../IMG/presentación/maparias.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5cm;
+  width: 70%;
+}
+@media screen and (max-width: 950px){
+  #bloqueprimero{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #maparias{
+    height: 500px;
+  }
+}
+@media screen and (max-width: 550px){
+  #maparias{
+    height: 300px;
+  }
 }
