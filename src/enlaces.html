@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlaces</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="IMG/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script type="module" src="../app.js"></script>
-</head>
-<body>
-    <header class="menu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name ="description" content="Te mostramos los recursos multimedia (vídeo/imagen) utilizados en el desarrollo de esta web.">
+        <title>Enlaces</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+        <link rel="stylesheet" href="../node_modules/hover.css/css/hover.css">
+        <link rel="icon" href="IMG/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+<body class="noto-sans-font">
+ <header class="menu">
         <div class="container">
-        <div class="gridmenu">
+        <div class="gridmenu animate__animated animate__bounce">
             <div>
-                <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/rias-baixas-logo.png" alt="Rias Baixas Logo" width="auto" height="90"></a>
+                <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/logo.png" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce"></a>
             </div>
             <div class="navegacion">
             <nav>
                 <ul>
-                    <li><a href="index.html" hreflang="es">Portada</a></li>
+                    <li ><a href="index.html" hreflang="es">Portada</a></li>
                     <li><a href="categoria.html" hreflang="es">Categoría</a></li>
                     <li><a href="presentacion.html" hreflang="es">Presentación</a></li>
                     <li class="pagactual"><a href="enlaces.html" hreflang="es">Enlaces</a></li>
@@ -30,38 +32,82 @@
             </div>
         </div>
         </div>
-    </header>
-    <main>
-        <p>hola</p> 
+</header>
+    <main id="mainenlace">
+        <div class="container" id="tabla">
+        <table>
+            <caption>RECURSOS MULTIMEDIA USADOS EN PORTADA</caption>
+            <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Derechos</th>
+            <th scope="col">Enlace</th>
+            </tr>
+            <!-- LOGO USADO EN FOOTER Y CABECERA -->
+            <tr>
+                <td>Logo Rías Baixas</td>
+                <td>Logo.com</td>
+                <td>Permissive</td>
+                <td><a href="https://logo.com/">Pincha aquí</a></td>
+            </tr>
+            <!-- FOTO DE FONDO DE LA PRIMERA SECCION DE PORTADA.HTML -->
+            <tr>
+                <td>"Barco de pesca, paisaje, agua, puesta del sol, mar, agua"</td>
+                <td>Pixnio.com</td>
+                <td>CC0</td>
+                <td><a href="https://pixnio.com/es/vehiculos/barcos-embarcaciones/barco-de-pesca-paisaje-agua-puesta-del-sol-mar-agua">Pincha aquí</a></td>
+            </tr>
+            <!-- FOTO USADA EN A SEGUNDA SECCION DE PORTADA.HTML -->
+            <tr>
+                <td>"Hombre alegre buscando algo, mirando a través de una lupa y sonriendo feliz, de pie contra la pared turquesa"</td>
+                <td>Benzoix</td>
+                <td>Permissive</td>
+                <td><a href="https://www.freepik.es/foto-gratis/hombre-alegre-buscando-algo-mirando-traves-lupa-sonriendo-feliz-pie-contra-pared-turquesa_11535863.htm#fromView=keyword&page=1&position=4&uuid=feee9cf3-489f-464d-9c26-088b14c30e95">Pincha aquí</a></td>
+            </tr>
+            <!-- FOTO USADA EN LA TERCERA SECCION DE PORTADA.HMTL QUE LLEVA A LOS ENLACES -->
+            <tr>
+                <td>"Enlace icono gratis"</td>
+                <td>Roundicons</td>
+                <td>Permissive</td>
+                <td><a href="https://www.flaticon.es/icono-gratis/enlace_189688">Pincha aquí</a></td>
+            </tr>
+            <!-- FOTO USADA COMO FONDO EN LA TERCERA SECCION DE PORTADA.HTML -->
+            <tr>
+                <td>"Vista Panorámica De La Costa De Galicia Con El Mar En Calma"</td>
+                <td>Javier Balseiro</td>
+                <td>CC0</td>
+                <td><a href="https://www.pexels.com/es-es/foto/vista-panoramica-de-la-costa-de-galicia-con-el-mar-en-calma-28736027/">Pincha aquí</a></td>
+            </tr>
+        </table>
+    </div>
     </main>
-    <!------------------------------------------------------------------------- CODIGO DE PIE DE PÁGINA -->
-<footer>
-    <div class="container">
-        <div class="footer">
-            <!------------------------------------------------------------- BLOQUE DE LA PARTE IZQUIERDA DEL FOOTER -->
-            <div class="bloque1">
-            <div class="logofooter">
-                <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/rias-baixas-logo.png" alt="Rias Baixas Logo" width="auto" height="90"></a>
-            </div>
-            <div class="container">
-                <p>2024 © Alejandro Abuín Álvarez</p>
-                <ul class="legalesfooter">
-                  <li><a href="" hreflang="es" title="Aviso legal">Aviso legal</a></li>
-                  <li><a href="" hreflang="es" title="Política de privacidad">Política de privacidad</a></li>
-                  <li><a href="" hreflang="es" title="Política de cookies">Política de <i lang="en">cookies</i></a></li>
-                </ul>
-            </div>
-            </div> 
-            <!------------------------------------------------------------- BLOQUE DE LA PARTE DERECHA DEL FOOTER -->
-            <div class="redessociales">
-                <ul>
-                    <li><a href="" title="Facebook" hreflang="es"><img src="IMG/facebook.png" alt="Facebook" width="50" height="50"></a></li>
-                    <li><a href="" title="Instagram" hreflang="es"><img src="IMG/Instagram_icon.png" alt="Instagram" width="28" height="28"></a></li>
-                    <li><a href="" title="Twitter" hreflang="es"><img src="IMG/x.png" alt="Twitter" width="47" height="47"></a></li>
-                </ul>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <!--BLOQUE DE LA PARTE IZQUIERDA DEL FOOTER -->
+                <div class="bloque1">
+                <div class="logofooter">
+                    <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/logo.png" alt="Rias Baixas Logo" height="90"></a>
+                </div>
+                <div class="container">
+                    <p>2024 © Alejandro Abuín Álvarez</p>
+                    <ul class="legalesfooter">
+                      <li><a href="" hreflang="es" title="Aviso legal">Aviso legal</a></li>
+                      <li><a href="" hreflang="es" title="Política de privacidad">Política de privacidad</a></li>
+                      <li><a href="" hreflang="es" title="Política de cookies">Política de <i lang="en">cookies</i></a></li>
+                    </ul>
+                </div>
+                </div> 
+                <!-- BLOQUE DE LA PARTE DERECHA DEL FOOTER -->
+                <div class="redessociales">
+                    <ul>
+                        <li><a href="" title="Facebook" hreflang="es"><img src="IMG/facebook.png" alt="Facebook" width="50" height="50"></a></li>
+                        <li><a href="" title="Instagram" hreflang="es"><img src="IMG/Instagram_icon.png" alt="Instagram" width="28" height="28"></a></li>
+                        <li><a href="" title="Twitter" hreflang="es"><img src="IMG/x.png" alt="Twitter" width="47" height="47"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    </footer> 
+        </footer>
 </body>
 </html>

@@ -35,25 +35,28 @@ header *, footer *{
   z-index: 1000;
   top: 0;
   width: 100%;
+  height: 2.5cm;
+  display: flex;
+  align-items: center;
 }
 .gridmenu{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  gap: 10%;
 }
-.navegacion nav ul {
+.navegacion nav ul, .navegaciondetalle nav ul {
   display: flex;
   list-style: none;
 }
-.navegacion nav ul li a {
+.navegacion nav ul li a, .navegaciondetalle nav ul li a {
   margin-left: 2.3em;
   text-decoration: none;
   padding: 7px;
   border-radius: 0.3cm;
 }
 /*----------------------------------ESTILOS MENÚ NAV---------------*/
-.navegacion nav ul li a:hover, .navegacion nav ul li a:focus{
+.navegacion nav ul li a:hover, .navegacion nav ul li a:focus, .navegaciondetalle a:hover, .navegaciondetalle a:focus{
   background-color: #3e4042;
   border-radius: 0.3cm;
   border-bottom: none;
@@ -260,8 +263,8 @@ footer{
   grid-template-columns: 1fr 1fr;
 }
 .logofooter a img{
-  height: 150px;
-  width: 190px;
+  margin-top: 1cm;
+  margin-bottom: 0.5cm;
 }
 .redessociales{
   display: flex;
@@ -375,6 +378,12 @@ figcaption{
   align-items: center;
 }
 /*----------------CARACTERÍSTICAS DEL ARTÍCULO--*/
+.gridmenudetalle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 62%;
+  align-items: center;
+}
 .articulositio h1{
   font-size: 45px;
   color: white;
@@ -516,7 +525,7 @@ iframe{
 /*-------------PRESENTACIÓN.HTML-----*/
 #presentacionmain{
   padding-top: 4cm;
-  background-color: #0093FB;
+  background-color: #72ade7;
 }
 /*---BLOQUE PRIMERO DE TEXTO--*/
 #descripciongalicia, #nuestraweb{
@@ -600,4 +609,19 @@ iframe{
 #listadesorportada li, #listaorportada li{
   margin-top: 1cm;
   line-height: 1.8em;
+}
+/*----------ESTILOS ENLACES.HTML----*/
+#mainenlace{
+  padding-top: 4cm;
+  background-color: #72ade7;
+}
+#tabla{
+  justify-items: center;
+}
+/*-----ESTILOS TABLA----*/
+table{
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid;
 }
