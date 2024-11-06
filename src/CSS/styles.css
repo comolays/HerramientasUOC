@@ -513,12 +513,13 @@ iframe{
      justify-items: center
   }
 }
-/*-------------PRESENTACIÓN.HTML---*/
+/*-------------PRESENTACIÓN.HTML-----*/
 #presentacionmain{
   padding-top: 4cm;
   background-color: #0093FB;
 }
-#descripciongalicia{
+/*---BLOQUE PRIMERO DE TEXTO--*/
+#descripciongalicia, #nuestraweb{
   background-image: url(../IMG/presentación/sunset.jpg);
   background-size: cover;
   line-height: 1.8em;
@@ -531,16 +532,27 @@ iframe{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #0093FB;
-  padding: 25px;
+  padding: 35px;
   border-radius: 0.5cm;
   color: white;
-  justify-items: end;
+  justify-items: center;
 }
-#bloqueprimero h2{
+#bloqueprimero div:nth-child(3), #bloqueprimero div:nth-child(4){
+  margin-top: 1cm;
+}
+#bloqueprimero h2, #nuestraweb h2{
   text-decoration: underline;
 }
+/*---FOTO DEL MAPA Y PESCADOR DEL BLOQUE PRIMERO--*/
 #maparias{
   background-image: url(../IMG/presentación/maparias.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5cm;
+  width: 70%;
+}
+#pesca{
+  background-image: url(../IMG/presentación/pesca.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5cm;
@@ -552,12 +564,40 @@ iframe{
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  #bloqueprimero h2, #nuestraweb h2{
+    text-align: center;
+  }
   #maparias{
+    margin-top: 0.8cm;
     height: 500px;
+  }
+  #pesca{
+    height: 500px;
+    grid-row: 4;
   }
 }
 @media screen and (max-width: 550px){
   #maparias{
     height: 300px;
   }
+  #pesca{
+    height: 300px;
+  }
+}
+/*----BLOQUE SEGUNDO - PORTADA ---*/
+#nuestraweb{
+  background-image: none;
+  background-color: #72ade7;
+}
+#bloquesegundo{
+  background-color: white;
+  color:#0093FB;
+  display: grid;
+  padding: 35px;
+  border-radius: 0.5cm;
+}
+/*------LISTA ANIDADA DEL SEGUNDO BLOQUE----*/
+#listadesorportada li, #listaorportada li{
+  margin-top: 1cm;
+  line-height: 1.8em;
 }

@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name ="description" content="Combarro, un pueblo pequeño pero con encanto donde se puede respiran su vinculación con su pasado marinero.">
-        <title>Combarro</title>
+        <meta name ="description" content="Conoce un poco la historia de nuestra zona, tanto su geografía como gastronomía y aprende a como moverte por nuestra web.">
+        <title>Presentación</title>
         <link rel="stylesheet" href="CSS/styles.css">
         <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
         <link rel="stylesheet" href="../node_modules/hover.css/css/hover.css">
@@ -12,17 +12,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <script type="module" src="JS/app.js"></script>
     </head>
 <body class="noto-sans-font">
     <header class="menu">
         <div class="container">
-        <div class="gridmenu">
+        <div class="gridmenu animate__animated animate__bounce">
             <div>
                 <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/rias-baixas-logo.png" alt="Rias Baixas Logo" height="90" class="animate__animated animate__bounce"></a>
             </div>
             <div class="navegacion">
-            <nav class="animate__animated animate__bounce">
+            <nav>
                 <ul>
                     <li><a href="index.html" hreflang="es">Portada</a></li>
                     <li><a href="categoria.html" hreflang="es">Categoría</a></li>
@@ -35,18 +34,45 @@
         </div>
     </header>
     <main id="presentacionmain">
-        <section id="descripciongalicia">
+        <!-- SECCION UNO DE GRID CON DOS FOTOS SOBRE GEOGRAFÍA/HISTORIA/GASTRONOMIA -->
+        <section id="descripciongalicia" class="animate__animated animate__jello">
             <div id="bloqueprimero" class="container">
                 <div>
-                    <h2>Geografía y Paisaje de Las Rías Baixas</h2>
+                    <h2>Un poco de contexto</h2>
                     <p>Las Rías Baixas, situadas en la costa occidental de Galicia, abarcan una de las zonas más bellas y emblemáticas del litoral atlántico español. Esta región comprende una serie de profundas entradas de mar, o rías, que se adentran tierra adentro, formando paisajes de gran belleza y diversidad. Desde el norte, en la ría de Muros y Noia, hasta el sur, en la ría de Vigo, las Rías Baixas incluyen también las rías de Arousa y Pontevedra, cada una con sus características particulares y ecosistemas únicos. El paisaje está marcado por verdes montañas, playas de arena blanca y aguas cristalinas, así como por pequeñas islas y acantilados que ofrecen un refugio natural a una rica biodiversidad marina y terrestre. Este entorno geográfico no solo define la vida en la región, sino que también ha dado forma a su cultura, economía y estilo de vida.</p>
                 </div>
-                <div id="maparias"></div>
+                <!-- FOTO DE MAPA -->
+                <div id="maparias" class="hvr-grow"></div> 
+                <!-- FOTO DE PESCADOR -->
+                <div id="pesca" class="hvr-grow"></div>
+                <div>
+                    <p>La gastronomía de las Rías Baixas es un reflejo directo de su privilegiada ubicación costera y su rica tradición marinera. En esta región, los mariscos son los protagonistas indiscutibles, con especialidades como las almejas, los percebes, las navajas, los mejillones y las ostras, que destacan por su frescura y sabor excepcional. Los pescados también ocupan un lugar importante, siendo habituales en recetas tradicionales y a la parrilla. Además, platos como el pulpo a la gallega, la empanada de mariscos, los pimientos de Padrón y el churrasco son imprescindibles en las mesas de la región, ofreciendo una combinación de sabores de mar y tierra. La cocina de las Rías Baixas es un viaje de sabores que conecta a los visitantes con la esencia del Atlántico y la riqueza de su tierra.</p>
+                </div>
             </div>
-            
+        </section>
+        <!-- SECCION DOS CON LA LISTA ANIDADA -->
+        <section id="nuestraweb" class="animate__animated animate__jello">
+            <div id="bloquesegundo" class="container">
+                <div>
+                    <h2>Cómo moverse por la web</h2>
+                    <p>Nuesa página consta de la siguiente estructura:</p>
+                    <ul id="listadesorportada">
+                        <li><b>La web de Portada</b>, como dice su propia definición, es la página principal del sitio web. Desde aquí podrás moverte, en caso de que no quieras hacerlo a través del menú de navegación, a otros apartos como: Categorías, Presentación y Enlaces.</li>
+                        <!-- LISTA ANIDADA -->
+                        <li><b>La web de Categoría</b>, dónde se mostrarán dos secciones con temáticas totalmente distintas: 
+                            <ol id="listadorportada">
+                            <li>La lista superior, ofrecerá una selección de diversos sitios de referencia turísticas localizados en distintos puntos (por lo que recomendamos el uso de vehículo) para ser visitados. Entrando en cada uno de ellos, se ofrecerá una información más detallada sobre el mismo.</li>
+                            <li>La lista inferior, muestra numeroso platos típicos de la zona. Al igual que con la lista anterior, al entrar en cada uno de ellos, se ofrecerá más información acerca de cada plato.</li>
+                            </ol>
+                            </li>
+                        <li><b>La web de Presentación</b> , en la cual estás ahora mismo. Este apartado te brindará toda la información detallada de la web, además de ofrecerte un pequeño contexto de la zona geográfica en la que nos centramos, así como también sobre su gastronomía. Es decir, sirve para ponerte un poco en contexto.</li>
+                        <li><b>La web de Enlaces</b>, donde encontrarás toda la información bibliográfica relacionada con los recursos multimedia usados a lo largo y ancho de todo el sitio web. Haremos referencia al elemento multimedia (vídeo/imagen), a su autor, el tipo de derechos que tiene y el link para poder encontrar el recurso.</li> 
+                    </ul>
+                </div>
+            </div>
         </section> 
     </main>
-    <!------------------------------------------------------------------------- CODIGO DE PIE DE PÁGINA -->
+    <!-- CODIGO DE PIE DE PÁGINA -->
     <footer>
         <div class="container">
             <div class="footer">
