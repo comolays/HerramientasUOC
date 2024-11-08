@@ -613,6 +613,7 @@ iframe{
 /*----------ESTILOS ENLACES.HTML----*/
 #mainenlace{
   padding-top: 4cm;
+  padding-bottom: 2cm;
   background-color: #72ade7;
 }
 #tabla{
@@ -621,7 +622,10 @@ iframe{
 /*-----ESTILOS TABLA----*/
 table{
   border-collapse: collapse;
+  margin-bottom: 1.5cm;
 }
 th, td{
   border: 1px solid;
+  text-align: center;
+  padding: 6px;
 }
