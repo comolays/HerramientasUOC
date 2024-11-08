@@ -612,8 +612,8 @@ iframe{
 }
 /*----------ESTILOS ENLACES.HTML----*/
 #mainenlace{
-  padding-top: 4cm;
-  padding-bottom: 2cm;
+  padding-top: 5cm;
+  padding-bottom: 1cm;
   background-color: #72ade7;
 }
 #tabla{
@@ -622,10 +622,38 @@ iframe{
 /*-----ESTILOS TABLA----*/
 table{
   border-collapse: collapse;
-  margin-bottom: 1.5cm;
+  margin-bottom: 2.5cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0093FB;
+  padding: 25px;
+  border-radius: 0.5cm;
+}
+caption{
+  margin-bottom: 0.6cm;
+  background-color: white;
+  width: max-content;
+  padding: 10px;
+  border-radius: 0.5cm;
+  color: #0093FB;
+  font-weight: bold;
+}
+th{
+  background-color: #3e4042;
 }
 th, td{
   border: 1px solid;
   text-align: center;
   padding: 6px;
+  color: white;
+  border: 3px solid;
+}
+table a{
+  text-decoration: none;
+  color: white;
+}
+table a:hover, table a:focus{
+  text-decoration: none;
+  color: black;
 }
