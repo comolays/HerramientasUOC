@@ -61,6 +61,19 @@ header *, footer *{
   border-radius: 0.3cm;
   border-bottom: none;
 }
+/*------MENU RESPONSIVE----*/
+@media screen and (max-width: 750px){
+  .menu{
+    height: 4cm;
+  }
+  .gridmenu{
+    display: flex;
+    flex-direction: column;
+  }
+  .navegacion nav ul{
+    margin-top: 0.5cm;
+  }
+}
 /*----------------------------ESTILO DE PÁGINA DONDE ESTÁ EL USUARIO----*/
 .pagactual a{
   border: none;
@@ -87,6 +100,11 @@ header *, footer *{
 #mainindex{
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 750px){
+  #mainindex{
+    padding-top: 2cm;
+  }
 }
 /*----------------------------RELATIVO AL TEXTO SOBRE LA FOTO------------*/
 #textoprinci{
@@ -312,8 +330,13 @@ footer{
 
 /*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
 #maincategoria{
-  padding-top: 120px;
+  padding-top: 3.5cm;
   background-color: #72ade7;
+}
+@media screen and (max-width: 750px){
+  #maincategoria{
+    padding-top: 5cm;
+  }
 }
 .tarjetas{
   background-color: #0093FB;
