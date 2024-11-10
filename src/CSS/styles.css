@@ -72,6 +72,7 @@ header *, footer *{
   height: 800px;
   background-image: url(../IMG/foto-princi-index.jpg);
   background-size: cover;
+  background-position: 50%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -230,6 +231,13 @@ header *, footer *{
   width: max-content;
   height: max-content;
 }
+@media screen and (max-width: 510px){
+  #botonenlace{
+    display: flex;
+    width: max-content;
+    height: max-content;
+  }
+}
 #botonenlace a{
   color: #0093FB;
   text-decoration: none;
@@ -246,11 +254,12 @@ header *, footer *{
   background-color: rgb(227, 10, 235);
   padding: 20px;
 }
-@media screen and (max-width: 510px){
+@media screen and (max-width: 450px){
   #botonenlace{
     display: flex;
-    width: max-content;
-    height: max-content;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
   }
 }
 /*-------------------------------FOOTER------------------*/
@@ -313,6 +322,7 @@ footer{
   border-radius: 0.5cm;
   margin-top: 1cm;
   justify-items: center;
+  width: max-content;
 }
 #lugaresvisita h2, #gastronomia h2{
   color: white;
@@ -334,8 +344,7 @@ footer{
   border-radius: 0.3cm;
   width: 250px;
   margin: auto;
-  margin-top: 1cm;
-  margin-bottom: 1cm;
+  margin: 1cm;
   overflow: hidden;
 }
 .tarjeta img{
@@ -351,7 +360,7 @@ figcaption{
   margin-top: 2cm;
   padding-bottom: 70px;
 }
-@media screen and (max-width: 870px){
+@media screen and (max-width: 1010px){
   .tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,7 +369,7 @@ figcaption{
     text-align: center;
   }
 }
-@media screen and (max-width: 570px){
+@media screen and (max-width: 670px){
   .tarjetas{
     display: grid;
     grid-template-columns: 1fr;
@@ -401,22 +410,22 @@ figcaption{
   display: flex;
   align-items: center;
   background-color: #0093FB;
-  width: max-content;
+  width: fit-content;
   border-radius: 0.5cm;
   padding: 15px;
   color: white;
-}
-@media screen and (max-width: 1165px){
-  .sitiofigure{
-     display: flex;
-     flex-direction: column;
-  }
 }
 .sitiofigure figure{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: max-content;
+}
+@media screen and (max-width: 1165px){
+  .sitiofigure{
+     display: flex;
+     flex-direction: column;
+  }
 }
 iframe{
   width: 700px;
@@ -444,6 +453,7 @@ iframe{
   .bloquelistainformacion{
      border-left: none;
      border-top: 3px solid white;
+     width: max-content;
   }
 }
 .bloquelistainformacion p{
@@ -462,6 +472,7 @@ iframe{
   border-radius: 0.5cm;
   margin-top: 1cm;
   padding: 20px;
+  width: fit-content;
 }
 .textositio{
   background-color: white;
@@ -483,8 +494,8 @@ iframe{
 }
 @media screen and (max-width: 1165px){
   .bloquesitio{
-     display: grid;
-     grid-template-columns: 1fr;
+     display: flex;
+     flex-direction: column;
   }
   .bloquesitio div:nth-child(2), .bloquesitio div:nth-child(3){
     display: none;
@@ -515,7 +526,7 @@ iframe{
     margin-bottom: -25px;
   }
 }
-@media screen and (max-width: 535px){
+@media screen and (max-width: 680px){
   .masisitiostarjeta{
      display: grid;
      grid-template-columns: 1fr;
@@ -531,6 +542,7 @@ iframe{
 #descripciongalicia, #nuestraweb{
   background-image: url(../IMG/presentación/sunset.jpg);
   background-size: cover;
+  background-position: 50%;
   line-height: 1.8em;
   text-align: justify;
   padding-top: 2cm;
@@ -629,6 +641,7 @@ table{
   background-color: #0093FB;
   padding: 25px;
   border-radius: 0.5cm;
+  width: fit-content;
 }
 caption{
   margin-bottom: 0.6cm;
