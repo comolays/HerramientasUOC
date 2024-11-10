@@ -354,6 +354,12 @@ footer{
     flex-direction:column;
     align-items: center;
   }
+  .footer p{
+    text-align: center;
+  }
+  .legalesfooter{
+    text-align: center;
+  }
 }
 
 /*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
