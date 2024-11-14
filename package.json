@@ -10,8 +10,8 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Galicia", "turismo", "Rías Bjas", "gastronomía", "naturaleza", "rutas"],
+  "author": "Alejandro Abuin",
   "license": "ISC",
   "description": "",
   "devDependencies": {
