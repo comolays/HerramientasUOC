@@ -446,6 +446,12 @@ figcaption{
 @media screen and (max-width: 500px){
   .detalle_sitio{
     padding-top: 7cm;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 430px){
+  .detalle_sitio{
+    padding-left: 3cm;
   }
 }
 .articumasseccion{
@@ -765,4 +771,13 @@ table a{
 table a:hover, table a:focus{
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 500px){
+  th,td{
+    padding: 5px;
+  }
+  #mainenlace{
+    overflow-x: auto;
+    padding-left: 6cm;
+  }
 }
