@@ -772,6 +772,9 @@ table a:hover, table a:focus{
   text-decoration: none;
   color: black;
 }
+.celdavacia{
+  display: none;
+}
 @media screen and (max-width: 500px){
   th,td{
     padding: 5px;
