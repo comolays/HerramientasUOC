@@ -466,6 +466,25 @@ figcaption{
   gap: 62%;
   align-items: center;
 }
+/* -----CARACTERÍSTICAS DE DISEÑO DE DETALLE_FINISTERRE CAMBIO DE CAJAS DE TEXTO */
+#textofinisterre1{
+  grid-column: 2;
+}
+#textofinisterre2{
+  grid-column: 1;
+  grid-row: 2;
+}
+#textofinisterre3{
+  grid-column: 2;
+}
+#flecha1{
+  transform: scaleX(-1);
+  grid-column: 1;
+  grid-row: 1;
+}
+#flecha2{
+  transform: scaleX(1);
+}
 /*----MENU RESPONSIVE DE DETALLE---*/
 @media screen and (max-width: 970px){
   .gridmenudetalle{
