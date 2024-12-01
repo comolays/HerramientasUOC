@@ -114,6 +114,7 @@ header *, footer *{
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  animation: cargarimagen 3s linear;
 }
 @media screen and (max-width: 570px){
   #fotoprinci{
@@ -177,14 +178,21 @@ header *, footer *{
   gap: 20px;
   background-color: white;
   border-radius: 0.5cm;
+  border: solid #ec17ec 4px;
   padding: 20px;
   margin-bottom: 2cm;
+  box-shadow: -15px 10px 6px 0px rgba(0,0,0,0.75);
 }
 /*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
 #fotobuscar{
   background-image: url(../IMG/buscar.jpg);
   background-size: cover;
   border-radius: 0.5cm;
+  clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+  transition: clip-path 1s linear;
+}
+#fotobuscar:hover{
+  clip-path: polygon(0 26%, 0 0, 35% 0%, 65% 0%, 79% 0, 100% 0, 100% 47%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 55%);
 }
 /*-------------------TEXTO SECCION DOS INDEX.HMTL-----*/
 #secciondos{
@@ -232,6 +240,7 @@ header *, footer *{
   background-position: center;
   display: flex;
   justify-content: center;
+  animation: animcirculo 4s linear;
 }
 #bloquesectre{
   display: flex;
@@ -244,6 +253,8 @@ header *, footer *{
   margin-bottom: 2cm;
   padding: 20px;
   align-items: center;
+  border: solid #ec17ec 4px;
+  box-shadow: -15px 10px 6px 0px rgba(0,0,0,0.75);
 }
 #textosectres{
   display: flex;
@@ -313,6 +324,9 @@ footer{
   background-color: #0093FB;
   display: flex;
 }
+footer div:nth-child(3){
+  justify-items: center;
+}
 .footer{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -326,6 +340,8 @@ footer{
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 4%;
+  grid-column: 2;
+  grid-row: 1;
 }
 .redessociales ul{
   display: flex;
@@ -335,18 +351,24 @@ footer{
   display: flex;
   flex-direction: column;
   font-size: 13px;
+  grid-column: 1;
+  grid-row: 1;
 }
 .bloque1 div:nth-child(2){
   margin-bottom: 1cm;
-  padding-left: 2%;
+  margin-left: 0;
 }
 .bloque1 div:nth-child(2) ul a{
   text-decoration: none;
   line-height: 1.5em;
 }
 /*------------------------------------ESTILO ENLACES FOOTER-----------*/
-.legalesfooter li a:focus, .legalesfooter li a:hover{
-  border-bottom: solid 1px white;
+.legalesfooter li{
+  line-height: 1.8em;
+}
+.legalesfooter li a:focus, .legalesfooter li a:hover, .legalesfooter li a:focus i, 
+.legalesfooter li a:hover i{
+  color: #3e4042;
 }
 @media screen and (max-width: 850px){
   .footer{
@@ -361,7 +383,24 @@ footer{
     text-align: center;
   }
 }
-
+/*-----------------------------ENLACES WEB DEL FOOTER-------------*/
+.footerwebs{
+  margin-bottom: 1cm;
+  font-size: 13px;
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.footerwebs ul{
+  display: flex;
+}
+.footerwebs ul li a{
+  text-decoration:none;
+  padding-left: 25px;
+}
+.footerwebs ul li a:focus, .footerwebs ul li a:hover{
+  text-decoration: underline;
+  color: #3e4042
+}
 /*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
 #maincategoria{
   padding-top: 3.5cm;
@@ -385,9 +424,18 @@ footer{
   margin-top: 1cm;
   justify-items: center;
   width: max-content;
+  border: solid #ec17ec 4px;
+  box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
 }
-#lugaresvisita h2, #gastronomia h2{
-  color: white;
+#lugaresvisita h2, #gastronomia h2, .massitios h2{
+  color: #0093FB;
+  background-color: white;
+  width: max-content;
+  padding: 10px;
+  border-radius: 0.5cm;
+  border: solid #ec17ec 3px;
+  box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+
 }
 .tarjetas div{
   width: max-content;
@@ -402,7 +450,7 @@ footer{
 /*--------------------DISEÑO CAJAS-----------------*/
 .tarjeta{
   text-align: center;
-  border: solid 2px white;
+  border: solid 3px white;
   border-radius: 0.3cm;
   width: 250px;
   margin: auto;
@@ -505,8 +553,10 @@ figcaption{
   font-size: 45px;
   color: white;
   background-color: #0093FB;
-  padding: 15px;
+  padding: 10px;
   border-radius: 0.5cm;
+  border: solid #ec17ec 4px;
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 .articulositio{
   display: flex;
@@ -522,6 +572,8 @@ figcaption{
   border-radius: 0.5cm;
   padding: 15px;
   color: white;
+  border: solid #ec17ec 4px;
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 .sitiofigure figure{
   display: flex;
@@ -581,6 +633,8 @@ iframe{
   margin-top: 1cm;
   padding: 20px;
   width: fit-content;
+  border: solid #ec17ec 4px;
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 .textositio{
   background-color: white;
@@ -589,6 +643,7 @@ iframe{
   text-align: justify;
   padding: 18px;
   line-height: 1.8em;
+  border: solid #ec17ec 4px;
 }
 /*------IMAGEN FLECHA----*/
 .bloquesitio div:nth-child(2){
@@ -616,6 +671,9 @@ iframe{
   margin-top: 2cm;
   color: white;
 }
+.massitios h2{
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);  
+}
 .masisitiostarjeta{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -623,6 +681,8 @@ iframe{
   background-color: #0093FB;
   padding: 10px;
   border-radius: 0.5cm;
+  border: solid #ec17ec 4px;
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 1680px){
   .masisitiostarjeta{
@@ -643,7 +703,7 @@ iframe{
 }
 /*-------------PRESENTACIÓN.HTML-----*/
 #presentacionmain{
-  padding-top: 4cm;
+  padding-top: 2cm;
   background-color: #72ade7;
 }
 @media screen and (max-width: 500px){
@@ -661,6 +721,7 @@ iframe{
   padding-top: 2cm;
   padding-bottom: 2cm;
   height: max-content;
+  justify-items: center;
 }
 #bloqueprimero{
   display: grid;
@@ -670,6 +731,8 @@ iframe{
   border-radius: 0.5cm;
   color: white;
   justify-items: center;
+  border: solid #ec17ec 4px;
+  box-shadow: -15px 10px 6px 0px rgba(0,0,0,0.64);
 }
 #bloqueprimero div:nth-child(3), #bloqueprimero div:nth-child(4){
   margin-top: 1cm;
@@ -684,6 +747,8 @@ iframe{
   background-repeat: no-repeat;
   border-radius: 0.5cm;
   width: 70%;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  box-shadow: 0 0 0 10px #e74c3c;
 }
 #pesca{
   background-image: url(../IMG/presentación/pesca.jpg);
@@ -691,6 +756,8 @@ iframe{
   background-repeat: no-repeat;
   border-radius: 0.5cm;
   width: 70%;
+  clip-path: circle(45% at 50% 50%);
+  box-shadow: 0 0 0 10px #e74c3c;
 }
 @media screen and (max-width: 950px){
   #bloqueprimero{
@@ -729,6 +796,8 @@ iframe{
   display: grid;
   padding: 35px;
   border-radius: 0.5cm;
+  border: solid #ec17ec 7px;
+  box-shadow: -15px 10px 6px 0px rgba(0,0,0,0.64);
 }
 /*------LISTA ANIDADA DEL SEGUNDO BLOQUE----*/
 #listadesorportada li, #listaorportada li{
@@ -737,7 +806,7 @@ iframe{
 }
 /*----------ESTILOS ENLACES.HTML----*/
 #mainenlace{
-  padding-top: 5cm;
+  padding-top: 4cm;
   padding-bottom: 1cm;
   background-color: #72ade7;
 }
@@ -753,6 +822,10 @@ iframe{
   justify-items: center;
 }
 /*-----ESTILOS TABLA----*/
+.svgestilo{
+  margin-bottom: 1cm;
+  animation: efectresbale 1s linear;
+}
 table{
   border-collapse: collapse;
   margin-bottom: 2.5cm;
@@ -763,12 +836,15 @@ table{
   padding: 25px;
   border-radius: 0.5cm;
   width: fit-content;
+  border: solid #ec17ec 3px;
+  box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
 }
 caption{
   margin-bottom: 0.6cm;
   background-color: white;
   width: max-content;
   padding: 10px;
+  border: solid #ec17ec 3px;
   border-radius: 0.5cm;
   color: #0093FB;
   font-weight: bold;
@@ -801,5 +877,40 @@ table a:hover, table a:focus{
   #mainenlace{
     overflow-x: auto;
     padding-left: 6cm;
+  }
+}
+
+/*--------KEYFRAMES------*/
+@keyframes cargarimagen{
+  0% {
+    clip-path: polygon(60% 0, 60% 0, 38% 100%, 38% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes animcirculo{
+  0%{
+    clip-path: polygon(0 99%, 100% 99%, 100% 100%, 0% 100%);
+  }
+  100%{
+    clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 0);
+  }
+}
+@keyframes efectresbale{
+  0% {
+    transform: scale(0.0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes abanico{
+  0%{
+    clip-path: circle(2.9% at 50% 50%);
+  }
+  100%{
+    clip-path: circle(50.8% at 50% 50%);
   }
 }
