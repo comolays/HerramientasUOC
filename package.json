@@ -1,5 +1,5 @@
 {
-  "name": "PEC1",
+  "name": "Pryecto Herramientas HTML/CSS",
   "version": "1.0.0",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
@@ -32,6 +32,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "hover.css": "^2.3.2",
-    "sharp": "^0.33.5"
+    "sharp": "^0.31.1"
   }
 }
