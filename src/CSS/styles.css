@@ -387,6 +387,9 @@ footer div:nth-child(3){
   .bloque1{
     align-items: center;
   }
+  .redessociales{
+    padding-bottom: 0.3cm;
+  }
 }
 /*------------------------------------ESTILO ENLACES FOOTER-----------*/
 .legalesfooter li{
@@ -421,11 +424,19 @@ footer div:nth-child(3){
 }
 .footerwebs ul li a{
   text-decoration:none;
-  padding-left: 25px;
+  padding-left: 22px;
 }
 .footerwebs ul li a:focus, .footerwebs ul li a:hover{
   text-decoration: underline;
   color: #3e4042
+}
+@media screen and (max-width: 850px){
+  .footerwebs ul{
+    display: block;
+  }
+  .footerwebs ul li{
+    line-height: 2em;
+  }
 }
 /*-----------------------------ESTILOS CATEGORIA.HTML-----------*/
 #maincategoria{
