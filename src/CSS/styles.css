@@ -79,6 +79,7 @@ header *, footer *{
 @media screen and (max-width: 500px){
   .menu{
     height: 7cm;
+    
   }
   .gridmenu{
     display: flex;
@@ -142,6 +143,16 @@ header *, footer *{
 #eslogan{
   border-top: solid 1px;
   border-bottom: solid 1px;
+}
+@media screen and (max-width: 425px){
+  #textoprinci{
+  font-size: 3em;
+  }
+}
+@media screen and (max-width: 365px){
+  #textoprinci{
+    font-size: 2.5em;
+    }
 }
 @media screen and (max-width: 665px){
   #botondescubre{
@@ -233,6 +244,11 @@ header *, footer *{
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 335px){
+  #secciondos p:last-of-type{
+    text-align: center;
+  }
+}
 /*----------------------------SECCIÓN 3---------------*/
 #fondosecciontres{
   background-image: url(../IMG/fondo3sec.jpg);
@@ -290,9 +306,14 @@ header *, footer *{
 }
 @media screen and (max-width: 510px){
   #botonenlace{
-    display: flex;
+    display: inline-block;
     width: max-content;
     height: max-content;
+  }
+}
+@media screen and (max-width: 390px){
+  #botonenlace{
+  font-size: 11px;
   }
 }
 #botonenlace a{
@@ -361,6 +382,11 @@ footer div:nth-child(3){
 .bloque1 div:nth-child(2) ul a{
   text-decoration: none;
   line-height: 1.5em;
+}
+@media screen and (max-width: 850px){
+  .bloque1{
+    align-items: center;
+  }
 }
 /*------------------------------------ESTILO ENLACES FOOTER-----------*/
 .legalesfooter li{
@@ -435,7 +461,6 @@ footer div:nth-child(3){
   border-radius: 0.5cm;
   border: solid #ec17ec 3px;
   box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
-
 }
 .tarjetas div{
   width: max-content;
@@ -475,8 +500,11 @@ figcaption{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #maincategoria h2{
-    text-align: center;
+  .categoriabloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 }
 @media screen and (max-width: 670px){
@@ -494,12 +522,6 @@ figcaption{
 @media screen and (max-width: 500px){
   .detalle_sitio{
     padding-top: 7cm;
-    overflow-x: auto;
-  }
-}
-@media screen and (max-width: 430px){
-  .detalle_sitio{
-    padding-left: 3cm;
   }
 }
 .articumasseccion{
@@ -549,8 +571,13 @@ figcaption{
     padding-right: 1cm;
   }
 }
+.articulositio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .articulositio h1{
-  font-size: 45px;
+  font-size: 3em;
   color: white;
   background-color: #0093FB;
   padding: 10px;
@@ -558,10 +585,10 @@ figcaption{
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
-.articulositio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 425px){
+  .articulositio h1{
+  font-size: 1.7em;
+  }
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
@@ -581,16 +608,21 @@ figcaption{
   align-items: center;
   width: max-content;
 }
+figure iframe{
+  border: groove 8px white;
+}
 @media screen and (max-width: 1165px){
   .sitiofigure{
      display: flex;
      flex-direction: column;
+     padding: 0px;
   }
 }
 iframe{
   width: 700px;
   height: 415px;
   border: none;
+  padding: 0px;
   
 }
 @media screen and (max-width: 815px){
@@ -603,6 +635,15 @@ iframe{
   iframe{
     width: 280px;
     height: 170px;
+  }
+  figure{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 400px){
+  .sitiofigure{
+    font-size: 11px;
   }
 }
 .bloquelistainformacion{
@@ -701,6 +742,22 @@ iframe{
      justify-items: center
   }
 }
+@media screen and (max-width: 360px){
+  .massitios{
+    align-items: center;
+  }
+  .massitios h2{
+    font-size: 16px;
+    margin-bottom: 0.8cm;
+  }
+  .masisitiostarjeta{
+    padding: 0;
+  }
+  .massitios figure{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 /*-------------PRESENTACIÓN.HTML-----*/
 #presentacionmain{
   padding-top: 2cm;
@@ -722,6 +779,11 @@ iframe{
   padding-bottom: 2cm;
   height: max-content;
   justify-items: center;
+}
+#descripciongalicia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #bloqueprimero{
   display: grid;
@@ -748,7 +810,6 @@ iframe{
   border-radius: 0.5cm;
   width: 70%;
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-  box-shadow: 0 0 0 10px #e74c3c;
 }
 #pesca{
   background-image: url(../IMG/presentación/pesca.jpg);
@@ -757,7 +818,6 @@ iframe{
   border-radius: 0.5cm;
   width: 70%;
   clip-path: circle(45% at 50% 50%);
-  box-shadow: 0 0 0 10px #e74c3c;
 }
 @media screen and (max-width: 950px){
   #bloqueprimero{
@@ -814,17 +874,16 @@ iframe{
   #mainenlace{
      padding-top: 8cm;
   }
-  #ajusteenlacemain{
-    padding-right: 1.6cm;
-  }
 }
 #tabla{
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*-----ESTILOS TABLA----*/
-.svgestilo{
+.svgestilo, .svgestilopresentacion{
   margin-bottom: 1cm;
-  animation: efectresbale 1s linear;
+  animation: efectzoom 1s linear;
 }
 table{
   border-collapse: collapse;
@@ -838,6 +897,7 @@ table{
   width: fit-content;
   border: solid #ec17ec 3px;
   box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
+  font-size: 1em;
 }
 caption{
   margin-bottom: 0.6cm;
@@ -870,17 +930,46 @@ table a:hover, table a:focus{
 .celdavacia{
   display: none;
 }
-@media screen and (max-width: 500px){
-  th,td{
-    padding: 5px;
-  }
-  #mainenlace{
-    overflow-x: auto;
-    padding-left: 6cm;
+/*-------------ESTILOS RESPONSIVE DE TABLA Y SVG DE PRESENTACION.HTML Y ENLACES.HTML----*/
+@media screen and (max-width: 750px){
+  .svgestilo, .svgestilopresentacion{
+    margin-top: 1cm;
   }
 }
-
-/*--------KEYFRAMES------*/
+@media screen and (max-width: 630px){
+  table{
+    font-size: 0.8em;
+  }
+  th,td{
+    padding: 3px;
+  }
+}
+@media screen and (max-width: 500px){
+  table{
+    font-size: 0.6em;
+  }
+  th,td{
+    padding: 2px;
+  }
+  .svgestilo, .svgestilopresentacion{
+    margin-bottom: 0.5cm;
+  }
+}
+@media screen and (max-width: 400px){
+  table{
+    font-size: 0.4em;
+  }
+  th,td{
+    padding: 1px;
+  }
+  .svgestilopresentacion{
+    margin-right: 35px;
+  }
+  .svgestilo text{
+    font-size: 18px;
+  }
+}
+/*--------------------------KEYFRAMES------*/
 @keyframes cargarimagen{
   0% {
     clip-path: polygon(60% 0, 60% 0, 38% 100%, 38% 100%);
@@ -897,7 +986,7 @@ table a:hover, table a:focus{
     clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 0);
   }
 }
-@keyframes efectresbale{
+@keyframes efectzoom{
   0% {
     transform: scale(0.0);
     opacity: 0;
@@ -912,5 +1001,13 @@ table a:hover, table a:focus{
   }
   100%{
     clip-path: circle(50.8% at 50% 50%);
+  }
+}
+@keyframes desliz {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
