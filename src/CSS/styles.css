@@ -623,7 +623,6 @@ iframe{
   height: 415px;
   border: none;
   padding: 0px;
-  
 }
 @media screen and (max-width: 815px){
   iframe{
@@ -644,6 +643,9 @@ iframe{
 @media screen and (max-width: 400px){
   .sitiofigure{
     font-size: 11px;
+  }
+  figure iframe{
+    border: groove 4px white;
   }
 }
 .bloquelistainformacion{
@@ -726,6 +728,9 @@ iframe{
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 1680px){
+  .massitios{
+    align-items: center;
+  }
   .masisitiostarjeta{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -957,7 +962,7 @@ table a:hover, table a:focus{
 }
 @media screen and (max-width: 400px){
   table{
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
   th,td{
     padding: 1px;
