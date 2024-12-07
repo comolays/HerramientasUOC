@@ -117,6 +117,11 @@ header *, footer *{
   text-align: center;
   animation: cargarimagen 3s linear;
 }
+@supports (background-image: url(image.webp)) {
+  #fotoprinci {
+    background-image: url(../IMG/Webp/foto-princi-index.webp);
+  }
+}
 @media screen and (max-width: 570px){
   #fotoprinci{
     height: auto;
@@ -205,6 +210,11 @@ header *, footer *{
 #fotobuscar:hover{
   clip-path: polygon(0 26%, 0 0, 35% 0%, 65% 0%, 79% 0, 100% 0, 100% 47%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 55%);
 }
+@supports (background-image: url(image.webp)) {
+  #fotobuscar {
+    background-image: url(../IMG/Webp/buscar.webp);
+  }
+}
 /*-------------------TEXTO SECCION DOS INDEX.HMTL-----*/
 #secciondos{
   display: flex;
@@ -257,6 +267,11 @@ header *, footer *{
   display: flex;
   justify-content: center;
   animation: animcirculo 4s linear;
+}
+@supports (background-image: url(image.webp)) {
+  #fondosecciontres {
+    background-image: url(../IMG/Webp/fondo3sec.webp);
+  }
 }
 #bloquesectre{
   display: flex;
@@ -601,6 +616,13 @@ figcaption{
   font-size: 1.7em;
   }
 }
+/*-----------IMAGEN DESTACADA----------*/
+.imagendestacada img{
+  margin-bottom: 1cm;
+  border-radius: 0.5cm;
+  border: solid #ec17ec 4px;
+  box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+}
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
   display: flex;
@@ -796,6 +818,11 @@ iframe{
   height: max-content;
   justify-items: center;
 }
+@supports (background-image: url(image.webp)) {
+  #descripciongalicia {
+    background-image: url(../IMG/Webp/presentacion/sunset.webp);
+  }
+}
 #descripciongalicia{
   display: flex;
   flex-direction: column;
@@ -827,6 +854,11 @@ iframe{
   width: 70%;
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
+@supports (background-image: url(image.webp)) {
+  #maparias {
+    background-image: url(../IMG/Webp/presentacion/maparias.webp);
+  }
+}
 #pesca{
   background-image: url(../IMG/presentación/pesca.jpg);
   background-size: cover;
@@ -835,7 +867,12 @@ iframe{
   width: 70%;
   clip-path: circle(45% at 50% 50%);
 }
-@media screen and (max-width: 950px){
+@supports (background-image: url(image.webp)) {
+  #pesca {
+    background-image: url(../IMG/Webp/presentacion/pesca.webp);
+  }
+}
+@media screen and (max-width: 1040px){
   #bloqueprimero{
     display: grid;
     grid-template-columns: 1fr;
@@ -847,13 +884,14 @@ iframe{
   #maparias{
     margin-top: 0.8cm;
     height: 500px;
+    width: 50%;
   }
   #pesca{
     height: 500px;
     grid-row: 4;
   }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
   #maparias{
     height: 300px;
   }

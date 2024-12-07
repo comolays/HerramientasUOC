@@ -1,6 +1,6 @@
 {
   "name": "Pryecto Herramientas HTML/CSS",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
