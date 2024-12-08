@@ -540,6 +540,11 @@ figcaption{
   }
 }
 /* ---------------------------DETALLES - COMBARRO ARTÍCULO */
+.articulositio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .detalle_sitio{
   padding-top: 4cm;
   padding-bottom: 2cm;
@@ -597,11 +602,6 @@ figcaption{
     padding-right: 1cm;
   }
 }
-.articulositio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .articulositio h1{
   font-size: 3em;
   color: white;
@@ -617,11 +617,21 @@ figcaption{
   }
 }
 /*-----------IMAGEN DESTACADA----------*/
+.imagendestacada{
+  display: flex;
+  justify-content: center;
+}
 .imagendestacada img{
   margin-bottom: 1cm;
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+  width: 60%;
+}
+@media screen and (max-width: 600px){
+  .imagendestacada img{
+    width: 80%;
+  }
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
