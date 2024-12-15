@@ -18,7 +18,10 @@
     <div class="container">
     <div class="gridmenu animate__animated animate__bounce">
         <div>
-            <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/portada/logo.svg" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce"></a>
+            <a href="index.html" title="Rias Baixas logo" hreflang="es"><picture>
+            <source srcset="IMG/portada/logo.svg">
+            <img src="IMG/portada/logo-png.png" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce">
+        </picture></a>
         </div>
         <div class="navegacion">
         <nav>
@@ -51,11 +54,16 @@
             <h2>¿Quieres saber más acerca de nosotros?</h2>
             <p>A continuación, podrás conocer nuestra historia, lo que mostramos y cual es nuestro objetivo. Pero la misión principal es:</p>
             <p>¡QUE REPITAS!</p>
-            <div class="linkboton hvr-grow" id="conocenosboton">
+            <div class="linkboton" id="conocenosboton">
                 <a href="presentacion.html" hreflang="es">CONÓCENOS</a>
             </div>
         </div>
         <div id="fotobuscar">
+            <picture>
+                <source media="(max-width: 799px)" srcset="IMG/Webp/portada/buscar_recortada.webp">
+                <source media="(min-width: 800px)" srcset="IMG/Webp/portada/buscar.webp">
+                <img src="IMG/portada/buscar.jpg" alt="Chico con una lupa en la mano">
+            </picture>
         </div>
     </div>
     </section>
@@ -69,7 +77,7 @@
         </div>
         <div id="fotoenlace" class="container">
         </div>
-        <div id="botonenlace" class="hvr-grow">
+        <div id="botonenlace">
             <a href="enlaces.html" hreflang="es">VISITA LOS RECURSOS</a>
         </div>
     </div>
@@ -82,7 +90,10 @@
         <!--BLOQUE DE LA PARTE IZQUIERDA DEL FOOTER -->
         <div class="bloque1">
         <div class="logofooter">
-            <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/portada/logo.svg" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce"></a>
+            <a href="index.html" title="Rias Baixas logo" hreflang="es"><picture>
+                <source srcset="IMG/portada/logo.svg">
+                <img src="IMG/portada/logo-png.png" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce">
+            </picture></a>
         </div>
         <div class="container">
             <ul class="legalesfooter">

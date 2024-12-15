@@ -18,7 +18,10 @@
         <div class="container">
         <div class="gridmenu animate__animated animate__bounce">
             <div>
-                <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/portada/logo.svg" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce"></a>
+                <a href="index.html" title="Rias Baixas logo" hreflang="es"><picture>
+                    <source srcset="IMG/portada/logo.svg">
+                    <img src="IMG/portada/logo-png.png" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce">
+                </picture></a>
             </div>
             <div class="navegacion">
             <nav>
@@ -49,9 +52,15 @@
                     <p>Las <i>Rías Baixas</i>, situadas en la costa occidental de Galicia, abarcan una de las zonas más bellas y emblemáticas del litoral atlántico español. Esta región comprende una serie de profundas entradas de mar, o rías, que se adentran tierra adentro, formando paisajes de gran belleza y diversidad. Desde el norte, en la ría de Muros y Noia, hasta el sur, en la ría de Vigo, las <i>Rías Baixas</i> incluyen también las rías de Arousa y Pontevedra, cada una con sus características particulares y ecosistemas únicos. El paisaje está marcado por verdes montañas, playas de arena blanca y aguas cristalinas, así como por pequeñas islas y acantilados que ofrecen un refugio natural a una rica biodiversidad marina y terrestre. Este entorno geográfico no solo define la vida en la región, sino que también ha dado forma a su cultura, economía y estilo de vida.</p>
                 </div>
                 <!-- FOTO DE MAPA -->
-                <div id="maparias" class="hvr-grow"></div> 
+                <div id="maparias" class="hvr-grow"></div>
                 <!-- FOTO DE PESCADOR -->
-                <div id="pesca" class="hvr-grow"></div>
+                <div id="pesca" class="hvr-grow">
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="IMG/Webp/presentacion/pesca_495.webp">
+                        <source media="(min-width: 800px)" srcset="IMG/Webp/presentacion/pesca.webp">
+                        <img src="IMG/presentacion/pesca.jpg" width="400" alt="Imagen de pescador">
+                    </picture>
+                </div>
                 <div>
                     <p>La gastronomía de las <i>Rías Baixas</i> es un reflejo directo de su privilegiada ubicación costera y su rica tradición marinera. En esta región, los mariscos son los protagonistas indiscutibles, con especialidades como las almejas, los percebes, las navajas, los mejillones y las ostras, que destacan por su frescura y sabor excepcional. Los pescados también ocupan un lugar importante, siendo habituales en recetas tradicionales y a la parrilla. Además, platos como el pulpo a la gallega, la empanada de mariscos, los pimientos de Padrón y el churrasco son imprescindibles en las mesas de la región, ofreciendo una combinación de sabores de mar y tierra. La cocina de las Rías Baixas es un viaje de sabores que conecta a los visitantes con la esencia del Atlántico y la riqueza de su tierra.</p>
                 </div>
@@ -86,8 +95,11 @@
                 <!--BLOQUE DE LA PARTE IZQUIERDA DEL FOOTER -->
                 <div class="bloque1">
                 <div class="logofooter">
-                    <a href="index.html" title="Rias Baixas logo" hreflang="es"><img src="IMG/portada/logo.svg" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce"></a>
-                </div>
+                    <a href="index.html" title="Rias Baixas logo" hreflang="es"><picture>
+                        <source srcset="IMG/portada/logo.svg">
+                        <img src="IMG/portada/logo-png.png" alt="Rias Baixas Logo" height="60" class="animate__animated animate__bounce">
+                    </picture></a>
+                 </div>
                 <div class="container">
                     <ul class="legalesfooter">
                       <li>2024 © Alejandro Abuín Álvarez</li>
