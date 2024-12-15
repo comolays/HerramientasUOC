@@ -622,7 +622,7 @@ figcaption{
   }
 }
 /*-----------IMAGEN DESTACADA----------*/
-.imagendestacada{
+.imagendestacada picture{
   display: flex;
   justify-content: center;
 }
@@ -632,11 +632,6 @@ figcaption{
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
   width: 60%;
-}
-@media screen and (max-width: 600px){
-  .imagendestacada img{
-    width: 80%;
-  }
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
@@ -738,21 +733,32 @@ iframe{
 }
 /*------IMAGEN FLECHA----*/
 .bloquesitio div:nth-child(2){
-  padding-left: 1.7cm;
-  padding-top: 2cm;
+  display: flex;
+  justify-content: center;
 }
-.bloquesitio div:nth-child(3){
-  transform: scaleX(-1);
-  padding-left: 2cm;
-  padding-top: 2cm;
+.bloquesitio div:nth-child(2) img, .gif img{
+  border-radius: 0.5cm;
+  border: solid 4px #ec17ec;
+}
+.bloquesitio div:nth-child(3), #svgfinisterre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1165px){
   .bloquesitio{
      display: flex;
      flex-direction: column;
   }
-  .bloquesitio div:nth-child(2), .bloquesitio div:nth-child(3){
-    display: none;
+}
+@media screen and (max-width: 530px){
+  .bloquesitio div:nth-child(2) img, .gif img{
+    width: 340px;
+  }
+}
+@media screen and (max-width: 400px){
+  .bloquesitio div:nth-child(2) img, .gif img{
+    width: 240px;
   }
 }
 /*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS-------*/
