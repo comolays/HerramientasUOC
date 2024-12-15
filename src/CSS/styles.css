@@ -107,7 +107,7 @@ header *, footer *{
 /*-------------------------RELATIVO A LA FOTO Y TEXTO-------------*/
 #fotoprinci{
   height: 800px;
-  background-image: url(../IMG/foto-princi-index.jpg);
+  background-image: url(../IMG/portada/foto-princi-index.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -119,7 +119,7 @@ header *, footer *{
 }
 @supports (background-image: url(image.webp)) {
   #fotoprinci {
-    background-image: url(../IMG/Webp/foto-princi-index.webp);
+    background-image: url(../IMG/Webp/portada/foto-princi-index.webp);
   }
 }
 @media screen and (max-width: 570px){
@@ -201,7 +201,7 @@ header *, footer *{
 }
 /*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
 #fotobuscar{
-  background-image: url(../IMG/buscar.jpg);
+  background-image: url(../IMG/portada/buscar.jpg);
   background-size: cover;
   border-radius: 0.5cm;
   clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
@@ -212,7 +212,7 @@ header *, footer *{
 }
 @supports (background-image: url(image.webp)) {
   #fotobuscar {
-    background-image: url(../IMG/Webp/buscar.webp);
+    background-image: url(../IMG/Webp/portada/buscar.webp);
   }
 }
 /*-------------------TEXTO SECCION DOS INDEX.HMTL-----*/
@@ -247,7 +247,7 @@ header *, footer *{
     grid-template-columns: 1fr;
   }
   #fotobuscar{
-    background-image: url(../IMG/buscar.jpg);
+    background-image: url(../IMG/portada/buscar.jpg);
     height: 300px;
   }
   #conocenosboton{
@@ -261,7 +261,7 @@ header *, footer *{
 }
 /*----------------------------SECCIÓN 3---------------*/
 #fondosecciontres{
-  background-image: url(../IMG/fondo3sec.jpg);
+  background-image: url(../IMG/portada/fondo3sec.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -270,7 +270,7 @@ header *, footer *{
 }
 @supports (background-image: url(image.webp)) {
   #fondosecciontres {
-    background-image: url(../IMG/Webp/fondo3sec.webp);
+    background-image: url(../IMG/Webp/portada/fondo3sec.webp);
   }
 }
 #bloquesectre{
@@ -306,7 +306,7 @@ header *, footer *{
   }
 }
 #fotoenlace{
-  background-image: url(../IMG/enlace.png);
+  background-image: url(../IMG/portada/enlace.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -818,7 +818,7 @@ iframe{
 }
 /*---BLOQUE PRIMERO DE TEXTO--*/
 #descripciongalicia, #nuestraweb{
-  background-image: url(../IMG/presentación/sunset.jpg);
+  background-image: url(../IMG/presentacion/sunset.jpg);
   background-size: cover;
   background-position: center;
   line-height: 1.8em;
@@ -857,7 +857,7 @@ iframe{
 }
 /*---FOTO DEL MAPA Y PESCADOR DEL BLOQUE PRIMERO--*/
 #maparias{
-  background-image: url(../IMG/presentación/maparias.png);
+  background-image: url(../IMG/presentacion/maparias.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5cm;
@@ -870,7 +870,7 @@ iframe{
   }
 }
 #pesca{
-  background-image: url(../IMG/presentación/pesca.jpg);
+  background-image: url(../IMG/presentacion/pesca.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5cm;
