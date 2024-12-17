@@ -625,7 +625,7 @@ figcaption{
   }
 }
 /*-----------IMAGEN DESTACADA----------*/
-.imagendestacada picture{
+.imagendestacada picture, .imagendestacada{
   display: flex;
   justify-content: center;
   animation: efectzoom 1s linear;
