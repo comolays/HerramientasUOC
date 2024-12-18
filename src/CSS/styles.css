@@ -752,6 +752,9 @@ iframe{
   justify-content: center;
   align-items: center;
 }
+.gif img{
+  width: 100%;
+}
 @media screen and (max-width: 1165px){
   .bloquesitio{
      display: flex;
@@ -764,12 +767,12 @@ iframe{
   }
 }
 @media screen and (max-width: 530px){
-  .bloquesitio div:nth-child(2) img, .gif img{
+  .bloquesitio div:nth-child(2) img{
     width: 340px;
   }
 }
 @media screen and (max-width: 400px){
-  .bloquesitio div:nth-child(2) img, .gif img{
+  .bloquesitio div:nth-child(2) img{
     width: 240px;
   }
 }
