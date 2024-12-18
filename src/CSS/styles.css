@@ -635,7 +635,7 @@ figcaption{
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-  width: 60%;
+  width: 70%;
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
@@ -694,6 +694,9 @@ iframe{
   figure iframe{
     border: groove 4px white;
   }
+  .imagendestacada img{
+    width: 80%;
+  }
 }
 .bloquelistainformacion{
   border-left: 3px solid white;
@@ -740,11 +743,11 @@ iframe{
   display: flex;
   justify-content: center;
 }
-.bloquesitio div:nth-child(2) img, .gif img{
+.bloquesitio div:nth-child(2) img, .gif img, #ciesarte img, #pontevedraarte img{
   border-radius: 0.5cm;
   border: solid 4px #ec17ec;
 }
-.bloquesitio div:nth-child(3), #svgfinisterre{
+.bloquesitio div:nth-child(3), #svgfinisterre, #ciesarte, #pontevedraarte{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,6 +756,11 @@ iframe{
   .bloquesitio{
      display: flex;
      flex-direction: column;
+  }
+}
+@media screen and (max-width: 710px){
+  #ciesarte img, #pontevedraarte img{
+    width: 100%;
   }
 }
 @media screen and (max-width: 530px){
