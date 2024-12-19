@@ -181,7 +181,6 @@ header *, footer *{
   border-radius: 0.3cm;
   background-color: rgb(227, 10, 235);
   padding: 20px;
-  transform: scale(1.5);
 }
 /*-------------------------------------------------------SECCIÓN 2 DE INDEX.HTML----*/
 #fondo{
@@ -883,6 +882,13 @@ iframe{
   background-repeat: no-repeat;
   border-radius: 0.5cm;
   width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+#pesca{
+  transition: transform 0.3s ease-in-out;
+}
+#maparias:hover, #pesca:hover{
+  transform: scale(1.1);
 }
 @supports (background-image: url(image.webp)) {
   #maparias {
