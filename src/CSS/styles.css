@@ -473,6 +473,7 @@ footer div:nth-child(3){
     padding-top: 7cm;
   }
 }
+/* ---------ESTILOS RELATIVOS AL BLOQUE DE TARJETAS---------- */
 .tarjetas{
   background-color: #0093FB;
   display: grid;
@@ -544,7 +545,7 @@ figcaption{
     grid-template-columns: 1fr;
   }
 }
-/* ---------------------------DETALLES - COMBARRO ARTÍCULO */
+/* --------------------------- ESTILOS DE  PAG.DETALLE ----- */
 .articulositio{
   display: flex;
   flex-direction: column;
@@ -575,7 +576,7 @@ figcaption{
   gap: 62%;
   align-items: center;
 }
-/* -----CARACTERÍSTICAS DE DISEÑO DE DETALLE_FINISTERRE CAMBIO DE CAJAS DE TEXTO */
+/* -----CARACTERÍSTICAS CAMBIO DE CAJAS DE TEXTO DE PAG. DETALLE*/
 #textofinisterre1{
   grid-column: 2;
 }
@@ -585,14 +586,6 @@ figcaption{
 }
 #textofinisterre3{
   grid-column: 2;
-}
-#flecha1{
-  transform: scaleX(-1);
-  grid-column: 1;
-  grid-row: 1;
-}
-#flecha2{
-  transform: scaleX(1);
 }
 /*----MENU RESPONSIVE DE DETALLE---*/
 @media screen and (max-width: 970px){
@@ -709,6 +702,7 @@ iframe{
      width: max-content;
   }
 }
+/* -----LISTA DE DATOS AL LADO DE CADA VÍDEO DE DETALLE ------------*/
 .bloquelistainformacion p{
   padding-left: 20px;
 }
@@ -726,6 +720,7 @@ iframe{
   margin-top: 1cm;
   padding: 20px;
   width: fit-content;
+  align-items: center;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
@@ -737,8 +732,9 @@ iframe{
   padding: 18px;
   line-height: 1.8em;
   border: solid #ec17ec 4px;
+  height: fit-content;
 }
-/*------IMAGEN FLECHA----*/
+/*------ESTILOS RELATIVOS A LOS DIV DE TEXTO DE CADA PAG. DE DETALLE (GIF, IMAGEN, SVG Y TEXTO) ----*/
 .bloquesitio div:nth-child(2){
   display: flex;
   justify-content: center;
@@ -776,7 +772,7 @@ iframe{
     width: 240px;
   }
 }
-/*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS-------*/
+/*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS DENTRO DE CADA PÁGINA DE DETALLE-------*/
 .massitios{
   display: flex;
   flex-direction: column;
@@ -1058,7 +1054,7 @@ table a:hover, table a:focus{
     font-size: 18px;
   }
 }
-/*--------------------------KEYFRAMES------*/
+/*--------------------------KEYFRAMES DE ANIMACIONES------*/
 @keyframes cargarimagen{
   0% {
     clip-path: polygon(60% 0, 60% 0, 38% 100%, 38% 100%);
