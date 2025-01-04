@@ -700,6 +700,10 @@ iframe{
      border-top: 3px solid white;
      width: max-content;
   }
+  /*ELIMINACIÓN DE LA RALLA DE SEPARACIÓN PARA LAS WEBS DE GASTRONOMÍA*/
+  #ingredientes{
+    border-top: none;
+  }
 }
 /* -----LISTA DE DATOS AL LADO DE CADA VÍDEO DE DETALLE ------------*/
 .bloquelistainformacion p{
@@ -738,17 +742,22 @@ iframe{
   display: flex;
   justify-content: center;
 }
-.bloquesitio div:nth-child(2) img, .gif img, #ciesarte img, #pontevedraarte img{
+.bloquesitio div:nth-child(2) img, .gif img, .arte img, .empanada img{
   border-radius: 0.5cm;
   border: solid 4px #ec17ec;
 }
-.bloquesitio div:nth-child(3), #svgfinisterre, #ciesarte, #pontevedraarte{
+.bloquesitio div:nth-child(3), .svgfinisterre, .arte, .empanada{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gif img{
+.gif img, .empanada img{
   width: 100%;
+}
+.empanada{
+  overflow: hidden;
+  grid-row: 3;
+  grid-column: 1;
 }
 @media screen and (max-width: 1165px){
   .bloquesitio{
@@ -757,7 +766,7 @@ iframe{
   }
 }
 @media screen and (max-width: 710px){
-  #ciesarte img, #pontevedraarte img{
+  .arte img{
     width: 100%;
   }
 }
@@ -769,6 +778,12 @@ iframe{
 @media screen and (max-width: 400px){
   .bloquesitio div:nth-child(2) img{
     width: 240px;
+  }
+  #pulposvg{
+    width: 170px;
+  }
+  #bandera img{
+    width: 100%;
   }
 }
 /*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS DENTRO DE CADA PÁGINA DE DETALLE-------*/
