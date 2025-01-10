@@ -901,6 +901,8 @@ iframe{
 }
 #pesca{
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 #maparias:hover, #pesca:hover{
   transform: scale(1.1);
