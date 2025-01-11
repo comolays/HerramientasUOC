@@ -478,14 +478,14 @@ footer div:nth-child(3){
   border-radius: 0.5cm;
   margin-top: 1cm;
   justify-items: center;
-  width: max-content;
+  width:fit-content;
   border: solid #ec17ec 4px;
   box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);
 }
 #lugaresvisita h2, #gastronomia h2, .massitios h2{
   color: #0093FB;
   background-color: white;
-  width: max-content;
+  width: fit-content;
   padding: 10px;
   border-radius: 0.5cm;
   border: solid #ec17ec 3px;
@@ -507,6 +507,7 @@ footer div:nth-child(3){
   border: solid 3px white;
   border-radius: 0.3cm;
   width: 250px;
+  height: 189px;
   margin: auto;
   margin: 1cm;
   overflow: hidden;
@@ -540,6 +541,16 @@ figcaption{
   .tarjetas{
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .tarjeta{
+  width: 180px;
+  height: 170px;
+  }
+  .tarjeta figcaption{
+    font-size: 13px;
+    padding: 0;
   }
 }
 /* --------------------------- ESTILOS DE  PAG.DETALLE ----- */
