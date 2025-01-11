@@ -625,7 +625,8 @@ figcaption{
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-  width: 70%;
+  width: 80%;
+  height: 75%;
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
@@ -656,8 +657,6 @@ figure iframe{
   }
 }
 iframe{
-  width: 700px;
-  height: 415px;
   border: none;
   padding: 0px;
 }
@@ -683,9 +682,6 @@ iframe{
   }
   figure iframe{
     border: groove 4px white;
-  }
-  .imagendestacada img{
-    width: 80%;
   }
 }
 .bloquelistainformacion{
@@ -749,8 +745,13 @@ iframe{
   justify-content: center;
   align-items: center;
 }
-.gif img, .empanada img{
+.gif img, .empanada img, arte img{
   width: 100%;
+  height: 100%;
+}
+.escudo{
+  display: flex;
+  justify-content: center;
 }
 .empanada{
   overflow: hidden;
@@ -766,6 +767,7 @@ iframe{
 @media screen and (max-width: 710px){
   .arte img{
     width: 100%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 530px){
@@ -777,11 +779,17 @@ iframe{
   .bloquesitio div:nth-child(2) img{
     width: 240px;
   }
-  #pulposvg{
-    width: 170px;
+  #pulposvg img{
+    width: 70%;
+    height: 70%;
   }
   #bandera img{
-    width: 100%;
+    width: 80%;
+    height: 80%;
+  }
+  .escudo img{
+    width: 25%;
+    height: 25%;
   }
 }
 /*------SECCIÓN DE LINKS DE OTROS LUGARES RELACIONADOS DENTRO DE CADA PÁGINA DE DETALLE-------*/
