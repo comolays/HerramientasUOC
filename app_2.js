@@ -1,7 +1,7 @@
-function mostrarSaludo(nombre) {
-    alert(`¡Hola, ${nombre}! Bienvenido a nuestra página web.`);
-  }
-  
-  // Solicitar el nombre del usuario y mostrar el saludo
-  let nombreUsuario = prompt("¿Cómo te llamas?");
-  mostrarSaludo(nombreUsuario);
+document.addEventListener("DOMContentLoaded", function () {
+  let count = 10;
+  const interval = setInterval(function () {
+    console.log(count--);
+    if (count === 0) clearInterval(interval);
+  }, 1000);
+});
