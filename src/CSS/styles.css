@@ -202,8 +202,6 @@ header *, footer *{
 }
 /*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
 #fotobuscar{
-  width: 500px;
-  height: 400px;
   clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
   transition: clip-path 1s linear;
   display: flex;
@@ -214,10 +212,10 @@ header *, footer *{
 #fotobuscar:hover{
   clip-path: polygon(0 26%, 0 0, 35% 0%, 65% 0%, 79% 0, 100% 0, 100% 47%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 55%);
 }
-@media screen and (max-width: 550px){
-  #fotobuscar{
-    width: 200px;
-    height: 200px;
+@media screen and (max-width:700px){
+  #fotobuscar img{
+    width: 100%;
+    height: 100%;
   }
 }
 /*-------------------TEXTO SECCION DOS INDEX.HMTL-----*/
@@ -933,19 +931,27 @@ iframe{
   #pesca{
     grid-row: 4;
   }
-  #pesca img{
+}
+@media screen and (max-width: 500px){
+  #maparias{
+    margin-top: 0.8cm;
     height: 200px;
-    width: 300px;
+    width: 200px;
+  }
+  #pesca picture{
+    display: flex;
+    justify-content: center;
+  }
+  #pesca img{
+    width: 90%;
+    height: 90%;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 300px){
   #maparias{
-    height: 200px;
-    width: 200px;
-  }
-  #pesca img{
-    height: 200px;
-    width: 200px;
+    margin-top: 0.8cm;
+    height: 120px;
+    width: 120px;
   }
 }
 /*----BLOQUE SEGUNDO - PORTADA ---*/
