@@ -118,7 +118,6 @@ header *, footer *{
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  animation: cargarimagen 3s linear;
   width: 100%;
 }
 @supports (background-image: url(image.webp)) {
@@ -130,7 +129,6 @@ header *, footer *{
   #fotoprinci{
     height: auto;
     background-image: url(../IMG/Webp/portada/foto-princi-index_640.webp);
-    animation: none;
   }
 }
 #mainindex{
