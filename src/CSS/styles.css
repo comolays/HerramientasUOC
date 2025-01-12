@@ -32,7 +32,7 @@ header *, footer *{
 }
 /*----------------------------CÓDIGO MENÚ NAV------*/
 .menu {
-  background-color: #0093FB;
+  background-color: #095388;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -174,7 +174,7 @@ header *, footer *{
   text-decoration: none;
   border: 1px solid #0093FB;
   border-radius: 0.3cm;
-  background-color: #0093FB;
+  background-color: #095388;
   padding: 20px;
   transition: all 0.5s ease;
 }
@@ -273,6 +273,7 @@ header *, footer *{
   justify-content: center;
   animation: animcortina 4s linear;
   border-radius: 0.5cm;
+  margin-bottom: 2cm;
 }
 @supports (background-image: url(image.webp)) {
   #fondosecciontres {
@@ -338,11 +339,11 @@ header *, footer *{
   }
 }
 #botonenlace a{
-  color: #0093FB;
+  color: white;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 0.3cm;
-  background-color: white;
+  background-color: #095388;
   padding: 20px;
   transition: all 0.5s ease; 
 }
@@ -368,7 +369,7 @@ header *, footer *{
 }
 /*-------------------------------FOOTER------------------*/
 footer{
-  background-color: #0093FB;
+  background-color: #095388;
   display: flex;
 }
 footer div:nth-child(3){
