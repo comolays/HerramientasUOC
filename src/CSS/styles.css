@@ -486,7 +486,7 @@ footer div:nth-child(3){
 }
 /* ---------ESTILOS RELATIVOS AL BLOQUE DE TARJETAS---------- */
 .tarjetas{
-  background-color: #0093FB;
+  background-color: #095388;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-radius: 0.5cm;
