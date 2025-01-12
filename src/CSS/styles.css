@@ -125,6 +125,7 @@ header *, footer *{
 @media screen and (max-width: 570px){
   #fotoprinci{
     height: auto;
+    animation: none;
   }
 }
 #mainindex{
