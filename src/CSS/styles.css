@@ -907,7 +907,7 @@ iframe{
 #bloqueprimero{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #0093FB;
+  background-color: #095388;
   padding: 35px;
   border-radius: 0.5cm;
   color: white;
@@ -994,7 +994,7 @@ iframe{
 }
 #bloquesegundo{
   background-color: white;
-  color:#0093FB;
+  color:#095388;
   display: grid;
   padding: 35px;
   border-radius: 0.5cm;
