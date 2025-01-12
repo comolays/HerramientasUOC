@@ -105,6 +105,9 @@ header *, footer *{
 }
 /*----------------------------------------MAIN INDEX.HTML-------------*/
 /*-------------------------RELATIVO A LA FOTO Y TEXTO-------------*/
+#mainindex{
+  align-items: center;
+}
 #fotoprinci{
   height: 800px;
   background-image: url(../IMG/portada/foto-princi-index.jpg);
@@ -116,6 +119,7 @@ header *, footer *{
   justify-content: space-around;
   text-align: center;
   animation: cargarimagen 3s linear;
+  width: 100%;
 }
 @supports (background-image: url(image.webp)) {
   #fotoprinci {
@@ -264,10 +268,12 @@ header *, footer *{
 #fondosecciontres{
   background-image: url(../IMG/portada/fondo3sec.jpg);
   background-size: cover;
+  width: 70%;
   background-position: center;
   display: flex;
   justify-content: center;
   animation: animcortina 4s linear;
+  border-radius: 0.5cm;
 }
 @supports (background-image: url(image.webp)) {
   #fondosecciontres {
@@ -299,6 +305,9 @@ header *, footer *{
     display: flex;
     text-align: center;
   }
+  #fondosecciontres{
+    animation: none;
+  }
 }
 @media screen and (max-width: 460px){
   #textosectres p{
@@ -320,16 +329,16 @@ header *, footer *{
   width: max-content;
   height: max-content;
 }
-@media screen and (max-width: 510px){
+@media screen and (max-width: 795px){
   #botonenlace{
     display: inline-block;
     width: max-content;
     height: max-content;
   }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 630px){
   #botonenlace{
-  font-size: 11px;
+  font-size: 10px;
   }
 }
 #botonenlace a{
@@ -354,8 +363,11 @@ header *, footer *{
   #botonenlace{
     display: flex;
     flex-direction: column;
-    width: 70%;
     text-align: center;
+  }
+  #botonenlace a{
+    padding: 10px;
+    font-size: 7px;
   }
 }
 /*-------------------------------FOOTER------------------*/
