@@ -129,7 +129,6 @@ header *, footer *{
 @media screen and (max-width: 570px){
   #fotoprinci{
     height: auto;
-    background-image: url(../IMG/Webp/portada/foto-princi-index_640.webp);
   }
 }
 #mainindex{
