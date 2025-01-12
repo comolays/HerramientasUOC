@@ -646,6 +646,9 @@ figcaption{
   }
 }
 /*-----------IMAGEN DESTACADA----------*/
+.imagendestacada{
+  margin-bottom: 2cm;
+}
 .imagendestacada picture, .imagendestacada{
   display: flex;
   justify-content: center;
@@ -656,8 +659,8 @@ figcaption{
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-  width: 80%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
