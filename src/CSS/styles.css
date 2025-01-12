@@ -486,7 +486,7 @@ footer div:nth-child(3){
 }
 /* ---------ESTILOS RELATIVOS AL BLOQUE DE TARJETAS---------- */
 .tarjetas{
-  background-color: #095388;
+  background-color: #0093FB;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-radius: 0.5cm;
@@ -510,6 +510,12 @@ footer div:nth-child(3){
 }
 .tarjetas a {
   text-decoration: none;
+}
+tarjetas div figure{
+  background-color: #095388;
+}
+.masisitiostarjeta figure, .tarjetas div figure{
+  background-color: #095388;
 }
 .tarjetas figure:hover, .tarjetas figure:focus, 
 .masisitiostarjeta figure:hover, .masisitiostarjeta figure:focus {
@@ -628,7 +634,7 @@ figcaption{
 .articulositio h1{
   font-size: 3em;
   color: white;
-  background-color: #0093FB;
+  background-color: #095388;
   padding: 10px;
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
@@ -657,7 +663,7 @@ figcaption{
 .sitiofigure{
   display: flex;
   align-items: center;
-  background-color: #0093FB;
+  background-color: #095388;
   width: fit-content;
   border-radius: 0.5cm;
   padding: 15px;
@@ -747,7 +753,8 @@ iframe{
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
 }
 .textositio{
-  background-color: white;
+  background-color: #095388;
+  color: white;
   border-radius: 0.5cm;
   display: flex;
   text-align: justify;
