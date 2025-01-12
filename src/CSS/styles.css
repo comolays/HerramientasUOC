@@ -203,6 +203,7 @@ header *, footer *{
   padding: 20px;
   margin-bottom: 2cm;
   box-shadow: -15px 10px 6px 0px rgba(0,0,0,0.75);
+  color: #095388;
 }
 /*-------------------------FOTO FLEX SECCION DOS INDEX.HMTL----------*/
 #fotobuscar{
@@ -283,7 +284,7 @@ header *, footer *{
 #bloquesectre{
   display: flex;
   flex-direction: column;
-  background-color: #0093FB;
+  background-color: #095388;
   width: 50%;
   height: auto;
   border-radius: 0.5cm;
@@ -437,6 +438,9 @@ footer div:nth-child(3){
   }
   .legalesfooter{
     text-align: center;
+  }
+  .legalesfooter li{
+    padding: 8px;
   }
 }
 /*-----------------------------ENLACES WEB DEL FOOTER-------------*/
