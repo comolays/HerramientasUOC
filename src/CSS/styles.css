@@ -659,8 +659,14 @@ figcaption{
   border-radius: 0.5cm;
   border: solid #ec17ec 4px;
   box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-  width: 100%;
+  width: 70%;
   height: 100%;
+}
+@media screen and (max-width: 650px){
+  .imagendestacada img{
+  width: 60%;
+  height: 100%;
+  }
 }
 /*---------FIGURE DEL ARTÍCULO Y LISTA--*/
 .sitiofigure{
