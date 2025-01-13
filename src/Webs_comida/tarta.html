@@ -43,11 +43,10 @@
             <h1 class="animate__animated animate__fadeInRight">TARTA DE SANTIAGO</h1>
             <!-- IMAGEN DESTACADA -->
                 <div class="imagendestacada">
-                    <picture>
-                        <source media="(max-width:550px)" srcset="../IMG/Webp/comida/tarta_texto_recortada.webp">
-                        <source media="(min-width:551px)" srcset="../IMG/Webp/comida/tarta_texto.webp">
-                        <img src="../IMG/comida/tarta_1280.jpg" width="640" height="426" alt="Hórreos de Combarro">
-                        </picture> 
+                    <img 
+                    srcset="../IMG/Webp/comida/tarta_640.webp 640w, ../IMG/Webp/comida/tarta_1280.webp 1200w, ../IMG/Webp/comida/tarta_1920.webp 1920w"
+                    sizes="(max-width: 700px) 640px, (max-width: 1300px) 700px, (max-width: 1920px) 900px"
+                    src="../IMG/comida/tarta_1280.jpg" width="722" height="484" alt="Plato de pimientos verdes"> 
                 </div>
                 <div class="sitiofigure animate__animated animate__fadeInRight">
                     <!-- LISTA INGREDIENTES -->
