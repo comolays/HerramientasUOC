@@ -682,7 +682,7 @@ figure{
   align-items: center
 }
 lite-youtube{
-  border: groove 4px white;
+  border: groove 6px white;
   width: 600px;
 }
 @media screen and (max-width: 1165px){
@@ -690,6 +690,10 @@ lite-youtube{
      display: flex;
      flex-direction: column;
      padding: 0px;
+  }
+  lite-youtube{
+    width: 100%;
+    height: 100%;
   }
 }
 iframe{
